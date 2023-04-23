@@ -1,7 +1,7 @@
 ﻿  Source.cpp
-D:\KSA\R&E\DNA Sequence Creator\DNA Sequence Creator\Source.cpp(18,41): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-D:\KSA\R&E\DNA Sequence Creator\DNA Sequence Creator\Source.cpp(42,40): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-D:\KSA\R&E\DNA Sequence Creator\DNA Sequence Creator\Source.cpp(95,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-D:\KSA\R&E\DNA Sequence Creator\DNA Sequence Creator\Source.cpp(100,23): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-D:\KSA\R&E\DNA Sequence Creator\DNA Sequence Creator\Source.cpp(110,34): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-  DNA Sequence Creator.vcxproj -> D:\KSA\R&E\DNA Sequence Creator\x64\Debug\DNA Sequence Creator.exe
+D:\KSA\R&E\DDDS_RandomAccessSystem\Previous\DNA Sequence Creator\DNA Sequence Creator\Source.cpp(18,41): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\KSA\R&E\DDDS_RandomAccessSystem\Previous\DNA Sequence Creator\DNA Sequence Creator\Source.cpp(42,40): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\KSA\R&E\DDDS_RandomAccessSystem\Previous\DNA Sequence Creator\DNA Sequence Creator\Source.cpp(95,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\KSA\R&E\DDDS_RandomAccessSystem\Previous\DNA Sequence Creator\DNA Sequence Creator\Source.cpp(100,23): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\KSA\R&E\DDDS_RandomAccessSystem\Previous\DNA Sequence Creator\DNA Sequence Creator\Source.cpp(110,34): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  DNA Sequence Creator.vcxproj -> D:\KSA\R&E\DDDS_RandomAccessSystem\Previous\DNA Sequence Creator\x64\Debug\DNA Sequence Creator.exe
