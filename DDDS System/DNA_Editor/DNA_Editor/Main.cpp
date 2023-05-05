@@ -3,13 +3,14 @@
 #include "Config.h"
 #include "Generator.h"
 #include "Encoder.h"
+#include "Decoder.h"
 using namespace std;
 
 int main() {
 	#if IsEncoder
 	cout << "[ DNA Encoder ]" << endl << endl;
 	#else
-	cout << cout << "[ DNA Decoder ]" << endl << endl;
+	cout << "[ DNA Decoder ]" << endl << endl;
 	#endif
 	cout << "> DNA Generation System" << endl;
 	cout << "  ¤¤Random Access of DNA Digital Data Storage System Using Restriction Modification System" << endl << endl;
@@ -28,6 +29,7 @@ int main() {
 	#endif
 	generator->Input();
 	generator->Generate(&path);
+	generator->Output();
 	delete generator;
 	return 0;
 }

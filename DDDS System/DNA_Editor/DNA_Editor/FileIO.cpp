@@ -38,12 +38,24 @@ vector<wstring> FileIO::GetFileNames() {
 	return path_set;
 }
 
-std::vector<char> FileIO::ReadFileData(std::string file_path) {
+std::string FileIO::ReadFileData(std::string file_path) {
 	FILE* f;
-	vector<char> data;
+	string data;
 	fopen_s(&f, file_path.c_str(), "rb");
 	while (feof(f) == 0) {
 		data.push_back(fgetc(f));
 	}
+	fclose(f);
+	data.pop_back();
 	return data;
+}
+
+int FileIO::SaveFileData(std::string file_path, std::string data) {
+	FILE* f;
+	fopen_s(&f, file_path.c_str(), "wb");
+	for (int i = 0; i < data.size(); i++) {
+		fputc(data[i], f);
+	}
+	fclose(f);
+    return 0;
 }
