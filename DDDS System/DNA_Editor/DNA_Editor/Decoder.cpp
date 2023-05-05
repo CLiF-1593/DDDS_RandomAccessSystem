@@ -42,6 +42,8 @@ void Decoder::Read(std::vector<std::wstring>* path) {
 			}
 			seq += dat[i];
 		}
+		if (!seq.empty())
+			vec.push_back(seq);
 		this->dna_seqence.push_back(vec);
 	}
 	cout << "> Reading Completed" << endl << endl;
@@ -55,6 +57,7 @@ void Decoder::DecodeReedSolomonCode() {
 		for (int j = 0; j < this->dna_seqence[i].size(); j++) {
 			string bin = Convertor::DnaToBin(this->dna_seqence[i][j]);
 			rs.decode(bin);
+			bin.resize(bin.size() - rs.nroots());
 			this->dna_seqence[i][j] = Convertor::BinToDna(bin);
 		}
 	}

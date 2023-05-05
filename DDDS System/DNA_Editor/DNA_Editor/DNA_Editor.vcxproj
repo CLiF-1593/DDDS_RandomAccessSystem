@@ -71,7 +71,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>D:\KSA\R&amp;E\DDDS System\DNA_Editor;$(IncludePath)</IncludePath>
+    <IncludePath>D:\KSA\R&amp;E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
