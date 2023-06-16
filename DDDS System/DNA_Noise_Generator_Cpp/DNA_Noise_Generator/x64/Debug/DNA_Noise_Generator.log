@@ -32,16 +32,16 @@ C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.3221
               _Iter=wchar_t *,
               _Alloc=std::allocator<char>
           ]
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Noise_Generator\DNA_Noise_Generator\Main.cpp(27): message : see reference to function template instantiation 'std::basic_string<char,std::char_traits<char>,std::allocator<char>> &std::basic_string<char,std::char_traits<char>,std::allocator<char>>::assign<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,0>(const _Iter,const _Iter)' being compiled
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Noise_Generator_Cpp\DNA_Noise_Generator\Main.cpp(35): message : see reference to function template instantiation 'std::basic_string<char,std::char_traits<char>,std::allocator<char>> &std::basic_string<char,std::char_traits<char>,std::allocator<char>>::assign<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,0>(const _Iter,const _Iter)' being compiled
           with
           [
               _Elem=wchar_t,
               _Iter=std::_String_iterator<std::_String_val<std::_Simple_types<wchar_t>>>
           ]
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Noise_Generator\DNA_Noise_Generator\Main.cpp(27,13): message : see reference to function template instantiation 'std::basic_string<char,std::char_traits<char>,std::allocator<char>> &std::basic_string<char,std::char_traits<char>,std::allocator<char>>::assign<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,0>(const _Iter,const _Iter)' being compiled
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Noise_Generator_Cpp\DNA_Noise_Generator\Main.cpp(35,13): message : see reference to function template instantiation 'std::basic_string<char,std::char_traits<char>,std::allocator<char>> &std::basic_string<char,std::char_traits<char>,std::allocator<char>>::assign<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,0>(const _Iter,const _Iter)' being compiled
           with
           [
               _Elem=wchar_t,
               _Iter=std::_String_iterator<std::_String_val<std::_Simple_types<wchar_t>>>
           ]
-  DNA_Noise_Generator.vcxproj -> D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Noise_Generator\x64\Debug\DNA_Noise_Generator.exe
+  DNA_Noise_Generator.vcxproj -> D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Noise_Generator_Cpp\x64\Debug\DNA_Noise_Generator.exe

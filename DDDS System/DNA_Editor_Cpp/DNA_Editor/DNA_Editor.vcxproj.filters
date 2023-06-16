@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="DNA">
+      <UniqueIdentifier>{ce609621-9c11-4a4a-bc42-826202841fe4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -31,6 +34,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Convertor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DNA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DeltaDNA.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -53,5 +62,27 @@
     <ClInclude Include="Convertor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="DNA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DeltaDNA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\DataSet\0.ACTG.txt">
+      <Filter>DNA</Filter>
+    </Text>
+    <Text Include="..\DataSet\1.TACT.txt">
+      <Filter>DNA</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\DataSet\0.ACTG.txt.dna">
+      <Filter>DNA</Filter>
+    </None>
+    <None Include="..\DataSet\1.TACT.txt.dna">
+      <Filter>DNA</Filter>
+    </None>
   </ItemGroup>
 </Project>

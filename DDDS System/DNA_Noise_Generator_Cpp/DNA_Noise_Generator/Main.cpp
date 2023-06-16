@@ -15,9 +15,17 @@ int main() {
 	vector<wstring> path = FileIO::GetFileNames();
 	if (path.empty()) return 0;
 
-	cout << "> Noise Ratio (%) : ";
-	double ratio;
-	cin >> ratio;
+	cout << "> Substitution Ratio (%) : ";
+	double sub;
+	cin >> sub;
+
+	cout << "> Insertion Ratio (%) : ";
+	double ins;
+	cin >> ins;
+
+	cout << "> Deletion Ratio (%) : ";
+	double del;
+	cin >> del;
 
 	char nucleotide[4] = { 'A', 'G', 'C', 'T' };
 
@@ -33,7 +41,7 @@ int main() {
 		for (int i = 0; i < dat.size(); i++) {
 			arr[i] = i;
 		}
-		for (int i = 0; i < (double)dat.size() * ratio / 100.0; i++) {
+		for (int i = 0; i < (double)dat.size() * sub / 100.0; i++) {
 			int index = rand() % arr.size();
 			random.push_back(arr[index]);
 			arr.erase(arr.begin() + index);
@@ -47,6 +55,18 @@ int main() {
 			for (index = 0; index < 4; index++) if (dat[random[i]] == nucleotide[index]) break;
 			index = (index + rand() % 3 + 1) % 4;
 			dat[random[i]] = nucleotide[index];
+		}
+		for (int i = 0; i < (double)dat.size() * ins / 100.0; i++) {
+			int index = rand() % dat.size();
+			int nuc = rand() % 4;
+			dat.insert(dat.begin() + index, nucleotide[nuc]);
+		}
+		for (int i = 0; i < (double)dat.size() * del / 100.0; i++) {
+			int index;
+			do {
+				index = rand() % dat.size();
+			} while (dat[index] == '\n');
+			dat.erase(dat.begin() + index);
 		}
 		FileIO::SaveFileData(str, dat);
 	}

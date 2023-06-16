@@ -10,94 +10,61 @@ int Decoder::Input() {
     return 0;
 }
 
-int Decoder::Generate(std::vector<std::wstring> *path) {
-	this->Read(path);
-	this->DecodeReedSolomonCode();
-	this->Combining();
-	this->ConvertBinary();
+int Decoder::Generate(std::vector<std::wstring> &path) {
+	this->path = path;
+	cout << "[DNA Data Decoding]" << endl;
+	for (int i = 0; i < path.size(); i++) {
+		cout << "File " << i + 1 << "/" << path.size();
+		std::string str;
+		str.assign(path[i].begin(), path[i].end());
+		cout << "\tPath : " << str << endl;
+		string dat = FileIO::ReadFileData(str);
+		cout << "\tSeparating DNA Strands . . ." << endl;
+		vector<DNA> dna_set;
+		DNA push_dna;
+		for (int i = 0; i < dat.size(); i++) {
+			if (dat[i] == 'A') push_dna.push_back(A);
+			else if (dat[i] == 'G') push_dna.push_back(G);
+			else if (dat[i] == 'C') push_dna.push_back(C);
+			else if (dat[i] == 'T') push_dna.push_back(T);
+			else if (dat[i] == '\n') {
+				dna_set.push_back(push_dna);
+				push_dna.clear();
+			}
+		}
+		if (push_dna.size()) {
+			dna_set.push_back(push_dna);
+			push_dna.clear();
+		}
+		cout << "\tNumber of DNA Strands : " << dna_set.size() << endl;
+		cout << "\tIndexing . . .";
+		DNA_Pool dna_pool;
+		int fail_cnt = 0;
+		for (int i = 0; i < dna_set.size(); i++) {
+			fail_cnt += IsFailed(dna_pool.AppendDNA(dna_set[i]));
+		}
+		cout << "\tSuccess : " << dna_set.size() - fail_cnt << " / " << dna_set.size() << endl;
+		cout << "\tError Correcting and Extracting Datas from DNA Strands" << endl;
+		dna_pool.Processing();
+		cout << "\tCompleted" << endl;
+		cout << "\tTotal DNA Strands Number : " << dna_pool.GetSize() << endl;
+		cout << "\tError Count : " << dna_pool.GetErrCnt() << endl;
+		cout << "\tFatal Error Count : " << dna_pool.GetFatalErrCnt() << endl << endl;
+		this->dna_pool_set.push_back(dna_pool);
+	}
 	return 0;
 }
 
 int Decoder::Output() {
-	this->Write();
+	cout << "[Save Data]" << endl;
+	for (int i = 0; i < this->path.size(); i++) {
+		cout << "File " << i + 1 << "/" << path.size();
+		std::string str;
+		str.assign(path[i].begin(), path[i].end());
+		str += ".origin";
+		cout << "\tPath : " << str << endl;
+		string dat;
+		FileIO::SaveFileData(str, this->dna_pool_set[i].GetData());
+	}
 	return 0;
-}
-
-void Decoder::Read(std::vector<std::wstring>* path) {
-	this->path = *path;
-	this->dna_seqence.clear();
-	cout << "> Reading . . ." << endl;
-	for (int i = 0; i < path->size(); i++) {
-		std::string str;
-		str.assign((*path)[i].begin(), (*path)[i].end());
-		cout << "\t" << str << endl;
-		string dat = FileIO::ReadFileData(str);
-		vector<string> vec;
-		string seq = "";
-		for (int i = 0; i < dat.size(); i++) {
-			if (dat[i] == '\n') {
-				vec.push_back(seq);
-				seq.clear();
-				continue;
-			}
-			seq += dat[i];
-		}
-		if (!seq.empty())
-			vec.push_back(seq);
-		this->dna_seqence.push_back(vec);
-	}
-	cout << "> Reading Completed" << endl << endl;
-}
-
-void Decoder::DecodeReedSolomonCode() {
-	cout << "> Decoding Reed Solomon Code . . ." << endl;
-	ezpwd::RS<255, 255 - (char)BPSToByte(PARITY_SIZE)> rs;
-	for (int i = 0; i < this->dna_seqence.size(); i++) {
-		cout << "\t" << "File Num : " << i << endl;
-		for (int j = 0; j < this->dna_seqence[i].size(); j++) {
-			string bin = Convertor::DnaToBin(this->dna_seqence[i][j]);
-			rs.decode(bin);
-			bin.resize(bin.size() - rs.nroots());
-			this->dna_seqence[i][j] = Convertor::BinToDna(bin);
-		}
-	}
-	cout << "> Decoding Reed Solomon Completed" << endl << endl;
-}
-
-void Decoder::Combining() {
-	cout << "> Combining . . ." << endl;
-	this->raw_dna.clear();
-	for (int i = 0; i < this->dna_seqence.size(); i++) {
-		cout << "\t" << "File Num : " << i << endl;
-		string str = "";
-		for (int j = 0; j < this->dna_seqence[i].size(); j++) {
-			str += this->dna_seqence[i][j];
-		}
-		this->raw_dna.push_back(str);
-	}
-	this->dna_seqence.clear();
-	cout << "> Combining Completed" << endl << endl;
-}
-
-void Decoder::ConvertBinary() {
-	cout << "> Converting DNA sequences to binary data . . ." << endl;
-	this->binary_data.clear();
-	for (int i = 0; i < this->raw_dna.size(); i++) {
-		cout << "\t" << "File Num : " << i << endl;
-		this->binary_data.push_back(Convertor::DnaToBin(this->raw_dna[i]));
-	}
-	this->raw_dna.clear();
-	cout << "> Converting Completed" << endl << endl;
-}
-
-void Decoder::Write() {
-	cout << "> Writing . . ." << endl;
-	for (int i = 0; i < this->path.size() && i < this->binary_data.size(); i++) {
-		wstring save_path = this->path[i] + L".origin";
-		std::string str;
-		str.assign(save_path.begin(), save_path.end());
-		cout << "\t" << str << endl;
-		FileIO::SaveFileData(str, this->binary_data[i]);
-	}
-	cout << "> Writing Completed" << endl << endl;
 }

@@ -71,7 +71,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>D:\KSA\R&amp;E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor;$(IncludePath)</IncludePath>
+    <IncludePath>D:\KSA\R&amp;E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor_Cpp;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -131,8 +131,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Convertor.cpp" />
-    <ClCompile Include="Decoder.cpp" />
-    <ClCompile Include="Encoder.cpp" />
+    <ClCompile Include="Decoder.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="DeltaDNA.cpp" />
+    <ClCompile Include="DNA.cpp" />
+    <ClCompile Include="Encoder.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="FileIO.cpp" />
     <ClCompile Include="Generator.cpp" />
     <ClCompile Include="Main.cpp" />
@@ -140,10 +146,24 @@
   <ItemGroup>
     <ClInclude Include="Config.h" />
     <ClInclude Include="Convertor.h" />
-    <ClInclude Include="Decoder.h" />
-    <ClInclude Include="Encoder.h" />
+    <ClInclude Include="Decoder.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="DeltaDNA.h" />
+    <ClInclude Include="DNA.h" />
+    <ClInclude Include="Encoder.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
     <ClInclude Include="FileIO.h" />
     <ClInclude Include="Generator.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\DataSet\0.ACTG.txt" />
+    <Text Include="..\DataSet\1.TACT.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\DataSet\0.ACTG.txt.dna" />
+    <None Include="..\DataSet\1.TACT.txt.dna" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

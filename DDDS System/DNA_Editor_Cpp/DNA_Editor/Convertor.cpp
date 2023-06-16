@@ -2,36 +2,31 @@
 #include <iostream>
 using namespace std;
 
-std::string Convertor::BinToDna(std::string dat) {
-	std::string ret;
+DNA Convertor::BinToDna(std::string dat) {
+	DNA ret;
 	for (int i = 0; i < dat.size(); i++) {
-		std:: string section = "";
+		DNA section;
 		char c = dat[i];
 		for (int k = 0; k < 4; k++) {
-			switch (c & 3) {
-			case 0: section += "A"; break;
-			case 1: section += "G"; break;
-			case 2: section += "C"; break;
-			case 3: section += "T"; break;
-			}
+			section.push_back(static_cast<Nucleotide>(c & 3));
 			c >>= 2;
 		}
 		reverse(section.begin(), section.end());
-		ret += section;
+		ret.insert(ret.end(), section.begin(), section.end());
 	}
     return ret;
 }
 
-std::string Convertor::DnaToBin(std::string dna) {
+std::string Convertor::DnaToBin(DNA dna) {
 	std::string ret;
+	while (dna.size() & 3) {
+		dna.push_back(A);
+	}
 	for (int i = 0; i < dna.size(); i += 4) {
 		char c = 0;
 		for (int j = 0; j < 4; j++) {
 			c <<= 2;
-			if (dna[i + j] == 'A') c += 0;
-			else if (dna[i + j] == 'G') c += 1;
-			else if (dna[i + j] == 'C') c += 2;
-			else if (dna[i + j] == 'T') c += 3;
+			c += dna[i + j];
 		}
 		ret += c;
 	}

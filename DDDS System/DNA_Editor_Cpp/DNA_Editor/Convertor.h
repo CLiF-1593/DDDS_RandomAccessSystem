@@ -1,8 +1,9 @@
 #pragma once
 #include <string>
+#include "Config.h"
 class Convertor {
 public:
-	static std::string BinToDna(std::string dat);
-	static std::string DnaToBin(std::string dna);
+	static DNA BinToDna(std::string dat);
+	static std::string DnaToBin(DNA dna);
 };
 
