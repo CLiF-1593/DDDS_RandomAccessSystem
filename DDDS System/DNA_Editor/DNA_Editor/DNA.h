@@ -1,58 +1,91 @@
 #pragma once
 #include <vector>
 #include <string>
+#include <ezpwd/rs>
 #include "Config.h"
 
-#define STRAND_SIZE 120
-#define RE_SIZE 6
+
 #define INDEX_SIZE 5
-#define INDEX_OVERFLOW_PARM_SIZE 3
-#define INDEX_PARITY_SIZE 4
-#define DATA_SIZE 16
+#define INDEX_PARITY_SIZE 1
+#define INDEX_NUMBER_SIZE 4
+
+#define DATA_SIZE 12
 #define DATA_PARITY_SIZE 8
 
-#define REPETITION 4
-#define MAX_INDEX_ORDER 10
+#define DATA_COUNT 3
+#define DATA_OVERLAP 1
 
-void PrintDNA(DNA dna);
+#define CANDIDATE_RATIO 0.3
+#define MAXIMUM_CALCULATING_TIME 30000
 
-class Strand {
-private:
-	DNA restriction_enzyme;
-	DNA index;
-	DNA index_parity;
-	DNA data;
-	DNA data_parity;
+using DataRS = ezpwd::RS<255, 255 - BPSToByte(DATA_PARITY_SIZE)>;
 
+class InsCandidate {
 public:
-	Strand(int index, int overflow_parameter, std::string data, std::vector<Nucleotide> restriction_enzyme);
+	int frequency;
+	int index;
+	Nucleotide nucleotide;
 
-	DNA GetRestrictionEnzymeSeq();
-	DNA GetIndexSeq();
-	DNA GetDataSeq();
+	InsCandidate();
+	InsCandidate(int frequency, int index, Nucleotide nucleotide);
+
+	bool operator<(const InsCandidate& other) const;
+	bool operator>(const InsCandidate& other) const;
 };
 
-class DNA_Pool {
+class DNA : public std::vector<Nucleotide> {
+public:
+	DNA slice(int begin, int end);
+	void ins(int index, Nucleotide nucleotide);
+	Nucleotide del(int index);
+
+	std::string to_binary();
+	unsigned int to_int();
+	void from_binary(std::string binary);
+	void from_int(int integer, int size);
+
+	std::string str();
+};
+
+using DNA_Set = std::vector<DNA>;
+
+class DNA_Classifier {
 private:
+	std::vector<DNA_Set> dna_pool;
+	std::vector<DNA> unknown_dna_pool;
+	std::vector<std::pair<int,int>> size_candidate;
 	int size;
-
-	std::vector<std::vector<DNA>> dna_sequence; // Store DNA sequences that recovered index completely
-	std::vector<std::string> data; // Stroe original datas recoverd perfectly
-	
-	std::vector<DNA> unknown_sequence;
-
-	int MergeMultipleDNA();
-	int ExtractDataFromDNA();
-
-	int fatal_err_cnt;
-	int err_cnt;
+	int total_append_num;
 
 public:
-	DNA_Pool();
-	int AppendDNA(DNA strand);
-	int Processing();
-	std::string GetData();
+	DNA_Classifier();
+	int Append(DNA dna);
+	DNA_Set GetDataSet(int index);
 	int GetSize();
-	int GetErrCnt();
-	int GetFatalErrCnt();
+	int GetNumber_Unknown();
+	int GetNumber_Total();
+
+	void MergeDNA();
+};
+
+class DNA_Analyzer {
+private:
+	
+	DNA_Set *dna_set;
+	DNA base_dna;
+	std::vector<InsCandidate> ins_candidate;
+
+	std::string result;
+
+	void SetEditDistance();
+	void SetCandidate();
+	void SetCorrectDNA();
+
+	int missing;
+
+public:
+	void InitDNA(DNA_Set *dna_set);
+	void Analyze();
+	std::string GetData();
+	std::string GetLowQualityData();
 };

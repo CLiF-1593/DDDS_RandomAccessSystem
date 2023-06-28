@@ -1,90 +1,619 @@
 #include "DNA.h"
-#include <ezpwd/rs>
 #include <assert.h>
-#include "Convertor.h"
-#include "DeltaDNA.h"
+#include <algorithm>
 using namespace std;
 
-using IndexRS = ezpwd::RS<255, 255 - BPSToByte(INDEX_PARITY_SIZE)>;
-using DataRS = ezpwd::RS<255, 255 - BPSToByte(DATA_PARITY_SIZE)>;
+int GCD(int a, int b) {
+	if (a < b) {
+		int tmp = a;
+		a = b;
+		b = tmp;
+	}
+	while (b) {
+		int tmp = a % b;
+		a = b;
+		b = tmp;
+	}
+	return a;
+}
 
-#define MIN(x,y) ((x) < (y) ? (x) : (y))
+// =============================================
+// ==================== DNA ====================
+// =============================================
 
-void PrintDNA(DNA dna) {
-	for (int i = 0; i < dna.size(); i++) {
-		switch (dna[i]) {
-		case A: std::cout << "A"; break;
-		case G: std::cout << "G"; break;
-		case C: std::cout << "C"; break;
-		case T: std::cout << "T"; break;
-		case X: std::cout << "_"; break;
+DNA DNA::slice(int begin, int end) {
+	DNA new_dna;
+	if(this->empty()) return new_dna;
+	for (int i = begin; i < end; i++) {
+		int index = i;
+		while (index < 0) index += this->size();
+		while (index >= (int)this->size()) {
+			index -= this->size();
+		}
+		new_dna.push_back((*this)[index]);
+	}
+	return new_dna;
+}
+
+void DNA::ins(int index, Nucleotide nucleotide) {
+	if(0 <= index && index <= this->size()) {
+		this->push_back(X);
+		for(int i = this->size() - 1; i > index; i--) {
+			(*this)[i] = (*this)[i - 1];
+		}
+		(*this)[index] = nucleotide;
+	}
+}
+
+Nucleotide DNA::del(int index) {
+	if(0 <= index && index < this->size()) {
+		Nucleotide nucleotide = (*this)[index];
+		for(int i = index; i < this->size() - 1; i++) {
+			(*this)[i] = (*this)[i + 1];
+		}
+		this->pop_back();
+		return nucleotide;
+	}
+	return X;
+}
+
+std::string DNA::to_binary() {
+	std::string ret;
+	while (this->size() & 3) {
+		this->push_back(A);
+	}
+	for (int i = 0; i < this->size(); i += 4) {
+		char c = 0;
+		for (int j = 0; j < 4; j++) {
+			c <<= 2;
+			c += (*this)[i + j];
+		}
+		ret += c;
+	}
+	return ret;
+}
+
+unsigned int DNA::to_int() {
+	unsigned int ret = 0;
+	for (int i = 0; i < this->size(); i++) {
+		ret <<= 2;
+		ret += (*this)[i];
+	}
+	return ret;
+}
+
+void DNA::from_binary(std::string binary) {
+	DNA ret;
+	for (int i = 0; i < binary.size(); i++) {
+		DNA section;
+		char c = binary[i];
+		for (int k = 0; k < 4; k++) {
+			section.push_back(static_cast<Nucleotide>(c & 3));
+			c >>= 2;
+		}
+		reverse(section.begin(), section.end());
+		ret.insert(ret.end(), section.begin(), section.end());
+	}
+	(*this) = ret;
+	return;
+}
+
+void DNA::from_int(int integer, int size) {
+	DNA ret;
+	for (int i = 0; i < size; i++) {
+		ret.push_back(static_cast<Nucleotide>(integer & 3));
+		integer >>= 2;
+	}
+	reverse(ret.begin(), ret.end());
+	(*this) = ret;
+	return;
+}
+
+std::string DNA::str() {
+	string ret;
+	for (int i = 0; i < this->size(); i++) {
+		switch ((*this)[i]) {
+			case A: ret += 'A'; break;
+			case G: ret += 'G'; break;
+			case C: ret += 'C'; break;
+			case T: ret += 'T'; break;
+			case X: ret += '_'; break;
 		}
 	}
-	std::cout << std::endl;
+	return ret;
 }
 
+// ===================================================
+// ================== Edit Distance ==================
+// ===================================================
 
+class ReturnType {
+public:
+	int distance = -1;
+	DNA dna1;
+	DNA dna2;
 
-Strand::Strand(int index, int overflow_parameter, std::string data, std::vector<Nucleotide> restriction_enzyme) {
-	assert(index >= 0 || index < pow(2, MAX_INDEX_ORDER)); // 0~2^MAX_INDEX_ORDER
-	assert(overflow_parameter >= 0 || overflow_parameter < REPETITION); // 0~2^MAX_INDEX_ORDER
-	assert(data.size() == BPSToByte(DATA_SIZE));
-
-	// Setting Restriction Enzyme Sequences
-	this->restriction_enzyme = restriction_enzyme;
-	
-	// Setting Index Sequences
-	IndexRS index_rs;
-	string index_data, index_parity;
-	index_data.push_back((char)(index >> (MAX_INDEX_ORDER - 8)));
-	index_data.push_back(0);
-	for (int i = 0; i < (8 - (MAX_INDEX_ORDER - 8)) / 2; i++) {
-		index_data.back() <<= 2;
-		index_data.back() += (overflow_parameter + i) & 3;
+	bool operator<(ReturnType& other) const {
+		return this->distance < other.distance;
 	}
-	index_data.back() += (unsigned char)(index << 8 - (MAX_INDEX_ORDER - 8));
-	index_rs.encode(index_data, index_parity);
-	this->index = Convertor::BinToDna(index_data);
-	this->index_parity = Convertor::BinToDna(index_parity);
+};
 
-	// Setting Data Sequences
-	DataRS data_rs;
-	string data_parity;
-	data_rs.encode(data, data_parity);
-	this->data = Convertor::BinToDna(data);
-	this->data_parity = Convertor::BinToDna(data_parity);
+vector<ReturnType> cache;
+
+ReturnType EditDistance(DNA& dna1, DNA& dna2, int index1, int index2) {
+	ReturnType ret;
+	if (cache[(dna2.size() + 1) * index1 + index2].distance != -1) {
+		return cache[(dna2.size() + 1) * index1 + index2];
+	}
+	if (index1 + index2 == 0) {
+		ret.distance = 0;
+		cache[(dna2.size() + 1) * index1 + index2] = ret;
+		return ret;
+	}
+	if (index1 == 0) {
+		ret.distance = index2;
+		for (int i = 0; i < index2; i++) ret.dna1.push_back(X);
+		ret.dna2.insert(ret.dna2.end(), dna2.begin(), dna2.begin() + index2);
+		cache[(dna2.size() + 1) * index1 + index2] = ret;
+		return ret;
+	}
+	if (index2 == 0) {
+		ret.distance = index1;
+		ret.dna1.insert(ret.dna1.end(), dna1.begin(), dna1.begin() + index1);
+		for (int i = 0; i < index1; i++) ret.dna2.push_back(X);
+		cache[(dna2.size() + 1) * index1 + index2] = ret;
+		return ret;
+	}
+	vector<ReturnType> container;
+	container.push_back(EditDistance(dna1, dna2, index1 - 1, index2 - 1));
+	container.push_back(EditDistance(dna1, dna2, index1, index2 - 1));
+	container.push_back(EditDistance(dna1, dna2, index1 - 1, index2));
+	container[0].distance += (dna1[index1 - 1] != dna2[index2 - 1]);
+	container[0].dna1.push_back(dna1[index1 - 1]);
+	container[0].dna2.push_back(dna2[index2 - 1]);
+	container[1].distance++;
+	container[1].dna2.push_back(dna2[index2 - 1]);
+	container[1].dna1.push_back(X);
+	container[2].distance++;
+	container[2].dna1.push_back(dna1[index1 - 1]);
+	container[2].dna2.push_back(X);
+	sort(container.begin(), container.end());
+	cache[(dna2.size() + 1) * index1 + index2] = container.front();
+	return container.front();
 }
 
-DNA Strand::GetRestrictionEnzymeSeq() {
-	return this->restriction_enzyme;
+int GetDelta(DNA& dna1, DNA& dna2) {
+	cache.clear();
+	cache.resize((dna1.size() + 1) * (dna2.size() + 1));
+	ReturnType ret = EditDistance(dna1, dna2, dna1.size(), dna2.size());
+	dna1 = ret.dna1;
+	dna2 = ret.dna2;
+	return ret.distance;
 }
 
-DNA Strand::GetIndexSeq() {
-	DNA ret = this->index;
-	ret.insert(ret.end(), this->index_parity.begin(), this->index_parity.end());
-	return ret;
-}
+void GetEditDistance(vector<DNA>* dna_set) {
+	if (!dna_set || dna_set->empty()) return;
 
-DNA Strand::GetDataSeq() {
-	DNA ret = this->data;
-	ret.insert(ret.end(), this->data_parity.begin(), this->data_parity.end());
-	return ret;
-}
-
-DNA Merge(vector<DNA> dna_set) {
-	DNA final_dna;
-	for (int i = 0; i < dna_set.size() - 1; i++) {
+	for (int i = 0; i < dna_set->size() - 1; i++) {
 		int index = i;
 		int prev_size = 0;
 		do {
-			prev_size = dna_set[index].size();
-			GetDelta(dna_set[i], dna_set[i + 1]);
-		} while (prev_size != dna_set[index].size() && index--);
+			GetDelta(dna_set->at(index), dna_set->at(index + 1));
+			/*for (int j = 0; j < dna_set->size(); j++) {
+				cout << dna_set->at(j).str() << endl;
+			}
+			cout << endl;*/
+		} while (prev_size != dna_set->at(index).size() && index--);
 	}
-	for (int i = 0; i < dna_set[0].size(); i++) {
+
+	int max_size = 0;
+	for (int i = 0; i < dna_set->size(); i++) {
+		if (dna_set->at(i).size() > max_size)
+			max_size = dna_set->at(i).size();
+	}
+	vector<int> x_num;
+	for (int i = 0; i < dna_set->size(); i++) {
+		while (dna_set->at(i).size() < max_size) {
+			dna_set->at(i).push_back(X);
+		}
+		x_num.push_back(0);
+		for (int j = (int)dna_set->at(i).size() - 1; j >= 0; j--) {
+			if (dna_set->at(i)[j] == X) x_num.back()++;
+			else break;
+		}
+	}
+	sort(x_num.begin(), x_num.end());
+	for (int i = 0; i < dna_set->size(); i++) {
+		for (int j = 0; j < x_num.front(); j++) {
+			dna_set->at(i).pop_back();
+		}
+	}
+}
+
+void GetCandidateList(DNA & base_dna, vector<InsCandidate>& ins_candidate, vector<DNA>* dna_set) {
+	if (!dna_set || dna_set->empty()) return;
+	base_dna.clear();
+	ins_candidate.clear();
+	int dna_max_length = dna_set->front().size();
+	int nucleotide_case_number = dna_set->size();
+	for (int i = 0; i < dna_max_length; i++) {
+		int a = 0, g = 0, c = 0, t = 0;
+		for (int j = 0; j < nucleotide_case_number; j++) {
+			switch (dna_set->at(j)[i]) {
+			case A: a++; break;
+			case G: g++; break;
+			case C: c++; break;
+			case T: t++; break;
+			}
+		}
+		if (a == nucleotide_case_number) base_dna.push_back(A);
+		else if (g == nucleotide_case_number) base_dna.push_back(G);
+		else if (c == nucleotide_case_number) base_dna.push_back(C);
+		else if (t == nucleotide_case_number) base_dna.push_back(T);
+		else {
+			base_dna.push_back(X);
+			if (a) ins_candidate.push_back(InsCandidate(a, i, A));
+			if (g) ins_candidate.push_back(InsCandidate(g, i, G));
+			if (c) ins_candidate.push_back(InsCandidate(c, i, C));
+			if (t) ins_candidate.push_back(InsCandidate(t, i, T));
+		}
+	}
+	assert(base_dna.size() == dna_max_length);
+	sort(ins_candidate.begin(), ins_candidate.end(), greater<InsCandidate>());
+	for (int i = 0; i < ins_candidate.size(); i++) {
+		if (ins_candidate[i].frequency < (double)nucleotide_case_number * CANDIDATE_RATIO) {
+			ins_candidate.erase(ins_candidate.begin() + i, ins_candidate.end());
+			break;
+		}
+	}
+}
+
+DNA Merge(int fix_number, DNA& base_dna, vector<InsCandidate>& ins_candidate) {
+	int cnt = fix_number;
+	DNA potent_dna = base_dna;
+	int candidate_index = 0;
+	while (cnt) {
+		if (candidate_index == ins_candidate.size()) break;
+		int pos = ins_candidate[candidate_index].index;
+		if (potent_dna[pos] == X) {
+			potent_dna[pos] = ins_candidate[candidate_index].nucleotide;
+			cnt--;
+		}
+		candidate_index++;
+	}
+	for (int i = 0; i < potent_dna.size(); i++) {
+		if (potent_dna[i] == X) {
+			potent_dna.del(i);
+			i--;
+		}
+	}
+	return potent_dna;
+}
+
+// ====================================================
+// ================== DNA_Classifier ==================
+// ====================================================
+
+DNA_Classifier::DNA_Classifier() {
+	this->size_candidate.clear();
+	this->total_append_num = 0;
+	this->size = 0;
+}
+
+int DNA_Classifier::Append(DNA dna) {
+	this->total_append_num++;
+
+	DNA index_dna = dna.slice(0, INDEX_SIZE);
+	DNA index_parity_dna = dna.slice(INDEX_SIZE, INDEX_SIZE + INDEX_PARITY_SIZE);
+	int index = index_dna.to_int();
+	int index_parity = index_parity_dna.to_int();
+	if (index % 4 == index_parity) {
+		if (this->dna_pool.size() <= index) {
+			this->dna_pool.resize(index + 1);
+		}
+		this->dna_pool[index].push_back(dna);
+	}
+	else {
+		this->unknown_dna_pool.push_back(dna);
+	}
+
+	DNA index_number_dna = dna.slice(INDEX_SIZE + INDEX_PARITY_SIZE , INDEX_SIZE + INDEX_PARITY_SIZE + INDEX_NUMBER_SIZE);
+	int index_number = index_number_dna.to_int();
+	for (int i = 0; i < this->size_candidate.size(); i++) {
+		if (this->size_candidate[i].second == index_number) {
+			this->size_candidate[i].first--;
+			index_number = -1;
+			sort(this->size_candidate.begin(), this->size_candidate.end());
+			this->size = this->size_candidate[0].second;
+			break;
+		}
+	}
+	if (index_number != -1) {
+		this->size_candidate.push_back(make_pair(0, index_number));
+	}
+	return 0;
+}
+
+DNA_Set DNA_Classifier::GetDataSet(int index) {
+	DNA_Set data;
+	for (int i = 0; i < this->dna_pool.size(); i++) {
+		int actual_index = i * (DATA_COUNT - DATA_OVERLAP);
+		actual_index %= this->size;
+		if (actual_index <= index + this->size && index + this->size < actual_index + DATA_COUNT) {
+			index += this->size;
+		}
+		if (actual_index <= index && index < actual_index + DATA_COUNT) {
+			int pos = index - actual_index;
+			int index_offset = INDEX_SIZE + INDEX_PARITY_SIZE + INDEX_NUMBER_SIZE;
+			int data_offset = DATA_SIZE + DATA_PARITY_SIZE;
+			for (int j = 0; j < this->dna_pool[i].size(); j++) {
+				data.push_back(this->dna_pool[i][j].slice(index_offset + data_offset * pos, index_offset + data_offset * (pos + 1)));
+			}
+		}
+	}
+	return data;
+}
+
+int DNA_Classifier::GetSize() {
+	return this->size;
+}
+
+int DNA_Classifier::GetNumber_Unknown() {
+	return this->unknown_dna_pool.size();
+}
+
+int DNA_Classifier::GetNumber_Total() {
+	return this->total_append_num;
+}
+
+void DNA_Classifier::MergeDNA() {
+	int index_offset = INDEX_SIZE + INDEX_PARITY_SIZE + INDEX_NUMBER_SIZE;
+	int data_offset = DATA_SIZE + DATA_PARITY_SIZE;
+	int fix_number = index_offset + data_offset * DATA_COUNT;
+	for (int i = 0; i < this->dna_pool.size(); i++) {
+		DNA_Set dna_set = this->dna_pool[i];
+		vector<InsCandidate> ins_candidate;
+		DNA base_dna;
+		GetEditDistance(&dna_set);
+		GetCandidateList(base_dna, ins_candidate, &dna_set);
+		for (int j = 0; j < base_dna.size(); j++) {
+			if (base_dna[j] != X) fix_number--;
+		}
+		DNA potent_dna;
+		if (fix_number > 0) potent_dna = Merge(fix_number, base_dna, ins_candidate);
+		else {
+			potent_dna = base_dna;
+			for (int j = 0; j < potent_dna.size(); j++) {
+				if (potent_dna[j] == X) {
+					potent_dna.del(j);
+					j--;
+				}
+			}
+		}
+		this->dna_pool[i].clear();
+		this->dna_pool[i].push_back(potent_dna);
+	}
+}
+
+// ==================================================
+// ================== DNA_Analyzer ==================
+// ==================================================
+
+
+void DNA_Analyzer::SetEditDistance() {
+	GetEditDistance(this->dna_set);
+}
+
+void DNA_Analyzer::SetCandidate() {
+	GetCandidateList(this->base_dna, this->ins_candidate, this->dna_set);
+}
+
+void DNA_Analyzer::SetCorrectDNA() {
+	if (!this->dna_set || this->dna_set->empty()) return;
+
+	// No Error Detected
+	if (this->ins_candidate.size() == 0) {
+		DataRS rs;
+		string str = this->base_dna.to_binary();
+		if (str.empty()) return;
+		int err = rs.decode(str);
+		if (!IsFailed(err)) {
+			this->result = str;
+		}
+		return;
+	}
+	
+	// Get Fix Number
+	int fix_number = DATA_SIZE + DATA_PARITY_SIZE;
+	for (int i = 0; i < this->base_dna.size(); i++) {
+		if (this->base_dna[i] != X) fix_number--;
+	}
+	if (fix_number < 0) {
+		fix_number *= -1;
+		vector<bool> fix_selector;
+		fix_selector.resize(this->base_dna.size());
+		for (int i = 0; i < fix_selector.size(); i++) fix_selector[i] = false;
+		if (!fix_selector.empty()) fix_selector[0] = true;
+
+		int timer = clock();
+
+		while (true) {
+			if (clock() - timer > MAXIMUM_CALCULATING_TIME) break;
+
+			DNA base = this->base_dna;
+			int cnt = 0;
+			bool pass = false;
+			for (int i = 0; i < fix_selector.size(); i++) {
+				if (fix_selector[i]) {
+					if (base[i] == X) {
+						pass = true;
+						goto ESCAPSE_DELETITION;
+					}
+					else {
+						base[i] = X;
+						cnt++;
+					}
+				}
+			}
+			if (cnt != fix_number) pass = true;
+		ESCAPSE_DELETITION:
+
+			if (!pass) {
+				DNA dna;
+				for (int i = 0; i < base.size(); i++) {
+					if (base[i] != X) dna.push_back(base[i]);
+				}
+				DataRS rs;
+				string str = dna.to_binary();
+				int err = rs.decode(str);
+				if (!IsFailed(err)) {
+					this->result = str;
+					return;
+				}
+			}
+
+			int pos = 0;
+			while (pos < fix_selector.size() && fix_selector[pos]) {
+				fix_selector[pos] = false;
+				pos++;
+			}
+			if (pos == fix_selector.size()) {
+				break;
+			}
+			fix_selector[pos] = true;
+		}
+		return;
+	}
+
+	// Step 1 : Fix DNA based on base DNA and potent insertion candidates
+	DNA potent_dna = Merge(fix_number, this->base_dna, this->ins_candidate);
+	/*cout << endl << potent_dna.str() << endl;
+	for (int i = 0; i < this->dna_set->size(); i++) {
+		cout << this->dna_set->at(i).str() << endl;
+	}*/
+	string str = potent_dna.to_binary();
+	DataRS rs;
+	int err = rs.decode(str);
+	if (!IsFailed(err)) {
+		this->result = str;
+		return;
+	}
+
+	// Step 2 : Fix DNA based on base DNA and all insertion candidates
+	vector<bool> fix_selector;
+	fix_selector.resize(this->ins_candidate.size());
+	for (int i = 0; i < fix_selector.size(); i++) fix_selector[i] = false;
+	if(this->ins_candidate.size() > 0) fix_selector[0] = true;
+
+	int timer = clock();
+
+	while (true) {
+		if (clock() - timer > MAXIMUM_CALCULATING_TIME) break;
+
+		DNA base = this->base_dna;
+		int cnt = 0;
+		bool pass = false;
+		for (int i = 0; i < fix_selector.size(); i++) {
+			if (fix_selector[i]) {
+				InsCandidate candidate = this->ins_candidate[i];
+				if (base[candidate.index] == X) {
+					base[candidate.index] = candidate.nucleotide;
+					cnt++;
+				}
+				else {
+					pass = true;
+					goto ESCAPSE;
+				}
+			}
+		}
+		if (cnt != fix_number) pass = true;
+		ESCAPSE:
+
+		if (!pass) {
+			DNA dna;
+			for (int i = 0; i < base.size(); i++) {
+				if (base[i] != X) dna.push_back(base[i]);
+			}
+			DataRS rs;
+			string str = dna.to_binary();
+			int err = rs.decode(str);
+			if (!IsFailed(err)) {
+				this->result = str;
+				return;
+			}
+		}
+
+		int pos = 0;
+		while (pos < fix_selector.size() && fix_selector[pos]) {
+			fix_selector[pos] = false;
+			pos++;
+		}
+		if (pos == fix_selector.size()) {
+			break;
+		}
+		fix_selector[pos] = true;
+	}
+}
+
+
+InsCandidate::InsCandidate() {
+	this->frequency = 0;
+	this->index = 0;
+	this->nucleotide = X;
+}
+
+InsCandidate::InsCandidate(int frequency, int index, Nucleotide nucleotide) {
+	this->index = index;
+	this->nucleotide = nucleotide;
+	this->frequency = frequency;
+}
+
+bool InsCandidate::operator<(const InsCandidate& other) const {
+	return this->frequency < other.frequency;
+}
+
+bool InsCandidate::operator>(const InsCandidate& other) const {
+	return this->frequency > other.frequency;
+}
+
+void DNA_Analyzer::InitDNA(DNA_Set *dna_set) {
+	this->dna_set = dna_set;
+	this->result.clear();
+	this->missing = 0;
+}
+
+void DNA_Analyzer::Analyze() {
+	/*for (int i = 0; i < this->dna_set->size(); i++) {
+		cout << this->dna_set->at(i).str() << endl;
+	}*/
+	//cout << "\t\tSet Edit Distance . . ." << endl;
+	this->SetEditDistance();
+	/*for (int i = 0; i < this->dna_set->size(); i++) {
+		cout << this->dna_set->at(i).str() << endl;
+	}*/
+	//cout << "\t\tSet Candidate . . ." << endl;
+	this->SetCandidate();
+	cout << "CN : " << this->ins_candidate.size() << " / ";
+	//cout << "\t\tCorrecting DNA . . ." << endl;
+	/*for (int i = 0; i < this->dna_set->size(); i++) {
+		cout << "\t\t\t" << this->dna_set->at(i).str() << endl;
+	}*/
+	//cout << "\t\tEnd" << endl;
+	this->SetCorrectDNA();
+}
+
+std::string DNA_Analyzer::GetData() {
+	return this->result;
+}
+
+std::string DNA_Analyzer::GetLowQualityData() {
+	DNA final_dna;
+	if (!this->dna_set || this->dna_set->empty()) return "";
+	GetEditDistance(this->dna_set);
+	for (int i = 0; i < dna_set->front().size(); i++) {
 		vector<pair<int, Nucleotide>> stack;
-		for (int j = 0; j < dna_set.size(); j++) {
-			Nucleotide push = dna_set[j][i];
+		for (int j = 0; j < dna_set->size(); j++) {
+			Nucleotide push = dna_set->at(j)[i];
 			bool pass = false;
 			for (int k = 0; k < stack.size(); k++) {
 				if (stack[k].second == push) {
@@ -104,304 +633,6 @@ DNA Merge(vector<DNA> dna_set) {
 			i--;
 		}
 	}
-	return final_dna;
-}
-
-int DNA_Pool::MergeMultipleDNA() {
-	this->dna_sequence.resize(this->size);
-	for (int dna_num = 0; dna_num < this->dna_sequence.size(); dna_num++) {
-		DNA final_dna;
-		auto dna_set = this->dna_sequence[dna_num];
-		this->dna_sequence[dna_num].clear();
-		if (dna_set.empty()) continue;
-		final_dna = Merge(dna_set);
-		this->dna_sequence[dna_num].push_back(final_dna);
-	}
-	return 0;
-}
-
-int DNA_Pool::ExtractDataFromDNA() {
-	this->data.clear();
-	this->data.resize(this->size);
-	for (int dna_num = 0; dna_num < this->dna_sequence.size(); dna_num++) {
-		// Select 4 Data Strands
-		vector<DNA> data_strand;
-		for (int i = 0; i < REPETITION; i++) {
-			int index = (dna_num + this->dna_sequence.size() - i) % this->dna_sequence.size();
-			if (this->dna_sequence[index].size()) {
-				DNA dna = this->dna_sequence[index][0];
-				DNA data_st;
-				auto begin = RE_SIZE + INDEX_SIZE + INDEX_OVERFLOW_PARM_SIZE + INDEX_PARITY_SIZE;
-				data_st.insert(data_st.end(), dna.begin() + begin + (DATA_SIZE + DATA_PARITY_SIZE) * i, dna.begin() + MIN(begin + (DATA_SIZE + DATA_PARITY_SIZE) * (i + 1), dna.size()));
-				data_strand.push_back(data_st);
-			}
-		}
-		if (data_strand.empty()) {
-			this->data[dna_num] = "";
-			this->fatal_err_cnt++;
-			continue;
-		}
-		DataRS rs;
-		string data;
-
-		// Step 1 : Decode First Strand
- 		DNA main_dna = data_strand.front();
-		data = Convertor::DnaToBin(main_dna);
-		int err = rs.decode(data);
-		if (!IsFailed(err)) {
-			this->data[dna_num] = data;
-			continue;
-		}
-
-		// Step 2 : Merge DNAs and Decode
-		DNA merged_dna = Merge(data_strand);
-		data = Convertor::DnaToBin(merged_dna);
-		err = rs.decode(data);
-		if (!IsFailed(err)) {
-			this->data[dna_num] = data;
-			continue;
-		}
-
-		// Step 3 : Brute Force (Insertion and Deletion)
-		vector<pair<int, Nucleotide>> ins;
-		vector<pair<int, Nucleotide>> del;
-		vector<pair<int, Nucleotide>> sub;
-		for (int i = 1; i < data_strand.size(); i++) {
-			DNA dna1 = data_strand.front();
-			DNA dna2 = data_strand[i];
-			GetDelta(dna1, dna2);
-			int index = 0;
-			for (int i = 0; i < dna1.size(); i++) {
-				if (dna2[i] == X) del.push_back(make_pair(index, X));
-				else if (dna1[i] == X) ins.push_back(make_pair(index, dna2[i]));
-				else if (dna1[i] != dna2[i]) sub.push_back(make_pair(-index - 1, dna2[i]));
-				if(dna1[i] != X) index++;
-			}
-		}
-		ins.erase(unique(ins.begin(), ins.end()), ins.end());
-		del.erase(unique(del.begin(), del.end()), del.end());
-		vector<pair<int, Nucleotide>> fix = ins;
-		fix.insert(fix.end(), del.begin(), del.end());
-		std::sort(fix.begin(), fix.end());
-		vector<bool> fix_selector;
-		fix_selector.resize(fix.size());
-		for (int i = 0; i < fix_selector.size(); i++) {
-			fix_selector[i] = false;
-		}
-		if (fix_selector.size()) fix_selector.front() = true;
-		bool success = false;
-		while (true) {
-			DNA strand = data_strand.front();
-			int offset = 0;
-			for (int i = 0; i < fix_selector.size(); i++) {
-				if (fix_selector[i]) {
-					if (fix[i].second == X) {
-						if (strand.size() <= fix[i].first + offset || fix[i].first + offset < 0) {
-							continue;
-						}
-						for (int j = fix[i].first + offset; j < strand.size() - 1; j++) {
-							strand[j] = strand[j + 1];
-						}
-						strand.pop_back();
-						offset--;
-					}
-					else {
-						if (strand.size() < fix[i].first + offset || fix[i].first + offset < 0) {
-							continue;
-						}
-						if (strand.size() == fix[i].first + offset) {
-							strand.push_back(fix[i].second);
-							continue;
-						}
-						strand.push_back(X);
-						for (int j = strand.size() - 1; j > fix[i].first + offset; j--) {
-							strand[j] = strand[j - 1];
-						}
-						strand[fix[i].first + offset] = fix[i].second;
-						offset++;
-					}
-				}
-			}
-			if (strand.size() == DATA_SIZE + DATA_PARITY_SIZE) {
-				data = Convertor::DnaToBin(strand);
-				err = rs.decode(data);
-				if (!IsFailed(err)) {
-					this->data[dna_num] = data;
-					success = true;
-					break;
-				}
-			}
-			int pos = 0;
-			while (pos < fix_selector.size() && fix_selector[pos]) {
-				fix_selector[pos] = false;
-				pos++;
-			}
-			if (pos == fix_selector.size()) {
-				break;
-			}
-			fix_selector[pos] = true;
-		}
-		if (success) {
-			continue;
-		}
-
-		// Step 4 : Brute Force (All Cases)
-		fix.insert(fix.end(), sub.begin(), sub.end());
-		std::sort(fix.begin(), fix.end());
-		fix_selector.resize(fix.size());
-		for (int i = 0; i < fix_selector.size(); i++) {
-			fix_selector[i] = false;
-		}
-		if (fix_selector.size()) fix_selector.front() = true;
-		success = false;
-		while (true) {
-			DNA strand = data_strand.front();
-			int offset = 0;
-			for (int i = 0; i < fix_selector.size(); i++) {
-				if (fix_selector[i]) {
-					if (fix[i].second == X) {
-						if (strand.size() <= fix[i].first + offset || fix[i].first + offset < 0) {
-							continue;
-						}
-						for (int j = fix[i].first + offset; j < strand.size() - 1; j++) {
-							strand[j] = strand[j + 1];
-						}
-						strand.pop_back();
-						offset--;
-					}
-					else {
-						if (fix[i].first >= 0) {
-							if (strand.size() < fix[i].first + offset || fix[i].first + offset < 0) {
-								continue;
-							}
-							if (strand.size() == fix[i].first + offset) {
-								strand.push_back(fix[i].second);
-								continue;
-							}
-							strand.push_back(X);
-							for (int j = strand.size() - 1; j > fix[i].first + offset; j--) {
-								strand[j] = strand[j - 1];
-							}
-							strand[fix[i].first + offset] = fix[i].second;
-							offset++;
-						}
-						else {
-							int first = -fix[i].first - 1;
-							if (strand.size() <= first + offset || first + offset < 0) {
-								continue;
-							}
-							strand[first + offset] = fix[i].second;
-						}
-					}
-				}
-			}
-			if (strand.size() == DATA_SIZE + DATA_PARITY_SIZE) {
-				data = Convertor::DnaToBin(strand);
-				err = rs.decode(data);
-				if (!IsFailed(err)) {
-					this->data[dna_num] = data;
-					success = true;
-					break;
-				}
-			}
-			int pos = 0;
-			while (pos < fix_selector.size() && fix_selector[pos]) {
-				fix_selector[pos] = false;
-				pos++;
-			}
-			if (pos == fix_selector.size()) {
-				break;
-			}
-			fix_selector[pos] = true;
-		}
-		if (success) {
-			continue;
-		}
-		main_dna = data_strand.front();
-		data = Convertor::DnaToBin(main_dna);
-		this->data[dna_num] = data;
-		this->err_cnt++;
-	}
-	return 0;
-}
-
-DNA_Pool::DNA_Pool() {
-	this->size = -1;
-}
-
-int DNA_Pool::AppendDNA(DNA strand) {
-	// Checking Index
-	DNA index_seq(strand.begin() + RE_SIZE, strand.begin() + RE_SIZE + INDEX_SIZE + INDEX_OVERFLOW_PARM_SIZE + INDEX_PARITY_SIZE);
-	string index_data = Convertor::DnaToBin(index_seq);
-	IndexRS index_rs;
-	int err = index_rs.decode(index_data);
-	if (IsFailed(err)) {
-		this->unknown_sequence.push_back(strand);
-		return -1;
-	}
-	int index = ((index_data[0]) << (MAX_INDEX_ORDER - 8)) + (((index_data[1]) >> 8 - (MAX_INDEX_ORDER - 8)) & 3);
-	vector<pair<int, int>> overflow_parm_stack;
-	for (int i = (8 - (MAX_INDEX_ORDER - 8)) / 2 - 1; i >= 0; i--) {
-		int push = ((index_data[1] & 3) + 4 - i) & 3;
-		bool pass = false;
-		for (int j = 0; j < overflow_parm_stack.size(); j++) {
-			if (overflow_parm_stack[j].second == push) {
-				overflow_parm_stack[j].first--;
-				pass = true;
-				break;
-			}
-		}
-		if(!pass) overflow_parm_stack.push_back(make_pair(0, push));
-		index_data[1] >>= 2;
-	}
-	std::sort(overflow_parm_stack.begin(), overflow_parm_stack.end());
-	int overflow_parm = overflow_parm_stack.front().second;
-
-	if (overflow_parm) {
-		this->size = index + REPETITION - overflow_parm;
-	}
-	if (this->dna_sequence.size() <= index) {
-		this->dna_sequence.resize(index + 1);
-	}
-	this->dna_sequence[index].push_back(strand);
-	return err;
-}
-
-int DNA_Pool::Processing() {
-	if (IsFailed(this->size)) {
-		this->size = this->dna_sequence.size() + REPETITION;
-	}
-	this->err_cnt = 0;
-	this->fatal_err_cnt = 0;
-	cout << "\t\tMerging DNA Strands . . ." << endl;
-	this->MergeMultipleDNA();
-	cout << "\t\tExtracting Datas . . ." << endl;
-	this->ExtractDataFromDNA();
-	return 0;
-}
-
-std::string DNA_Pool::GetData() {
-	string ret;
-	for (int i = 0; i < this->data.size(); i++) {
-		if (this->data[i].size() < BPSToByte(DATA_SIZE)) {
-			ret += this->data[i];
-			continue;
-		}
-		for (int j = 0; j < BPSToByte(DATA_SIZE); j++) {
-			ret += this->data[i][j];
-		}
-	}
-	return ret;
-}
-
-int DNA_Pool::GetSize() {
-	return this->size;
-}
-
-int DNA_Pool::GetErrCnt() {
-	return err_cnt;
-}
-
-int DNA_Pool::GetFatalErrCnt() {
-	return this->fatal_err_cnt;
+	string str = final_dna.to_binary();
+	return str;
 }

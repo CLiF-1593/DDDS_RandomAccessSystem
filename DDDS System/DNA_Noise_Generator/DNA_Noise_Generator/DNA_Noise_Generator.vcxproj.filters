@@ -18,12 +18,12 @@
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\DNA_Editor_Cpp\DNA_Editor\FileIO.cpp">
+    <ClCompile Include="..\..\DNA_Editor\DNA_Editor\FileIO.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\DNA_Editor_Cpp\DNA_Editor\FileIO.h">
+    <ClInclude Include="..\..\DNA_Editor\DNA_Editor\FileIO.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

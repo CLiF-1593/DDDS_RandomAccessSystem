@@ -1,0 +1,238 @@
+<Decoding Log - Repetition 1 (+Candidate Number)>
+
+[ DNA Decoder ]
+
+> DNA Generation System
+  ㄴDNA Digital Data Storage System Using Methylation and Restriction Modification System
+
+> 2023 KSA R&E
+
+[DNA Data Decoding]
+File 1/15       Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep1_Amp1_Err1.dna
+        Separating DNA Strands . . .
+        Number of DNA Strands : 112
+        Classifying . . .
+        Analyzing . . .
+CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 6 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 4 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 4 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 6 / CN : 0 / CN : 2 / CN : 0 / CN : 20 / CN : 22 / CN : 20 / CN : 20 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 4 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 6 / CN : 0 / CN : 4 / CN : 0 / CN : 0 / CN : 0 /
+        Success : 110 / 112
+        Error Correcting and Extracting Datas from DNA Strands
+        Completed
+        Total Data part Number : 224
+        Error DNA part Number : 17
+        Fatal Error DNA part Number : 0
+        Missing DNA part Number : 3
+File 2/15       Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep1_Amp1_Err2.dna
+        Separating DNA Strands . . .
+        Number of DNA Strands : 112
+        Classifying . . .
+        Analyzing . . .
+CN : 6 / CN : 0 / CN : 27 / CN : 18 / CN : 24 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 4 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 4 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 28 / CN : 0 / CN : 18 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 39 / CN : 22 / CN : 22 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 6 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 4 / CN : 0 / CN : 4 / CN : 0 / CN : 0 / CN : 0 / CN : 4 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 4 / CN : 0 / CN : 4 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 4 / CN : 0 / CN : 4 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 17 / CN : 20 / CN : 24 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 4 / CN : 0 / CN : 0 / CN : 0 / CN : 4 / CN : 0 / CN : 0 / CN : 0 / CN : 4 / CN : 0 / CN : 0 / CN : 0 / CN : 4 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 8 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 4 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 /
+        Success : 110 / 112
+        Error Correcting and Extracting Datas from DNA Strands
+        Completed
+        Total Data part Number : 224
+        Error DNA part Number : 27
+        Fatal Error DNA part Number : 0
+        Missing DNA part Number : 5
+File 3/15       Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep1_Amp1_Err3.dna
+        Separating DNA Strands . . .
+        Number of DNA Strands : 112
+        Classifying . . .
+        Analyzing . . .
+CN : 4 / CN : 0 / CN : 15 / CN : 10 / CN : 22 / CN : 0 / CN : 4 / CN : 0 / CN : 6 / CN : 0 / CN : 4 / CN : 0 / CN : 2 / CN : 0 / CN : 6 / CN : 0 / CN : 4 / CN : 0 / CN : 6 / CN : 0 / CN : 0 / CN : 0 / CN : 24 / CN : 22 / CN : 18 / CN : 0 / CN : 4 / CN : 0 / CN : 0 / CN : 0 / CN : 6 / CN : 0 / CN : 8 / CN : 0 / CN : 2 / CN : 0 / CN : 4 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 18 / CN : 18 / CN : 24 / CN : 0 / CN : 8 / CN : 0 / CN : 2 / CN : 0 / CN : 4 / CN : 0 / CN : 4 / CN : 0 / CN : 0 / CN : 0 / CN : 4 / CN : 0 / CN : 6 / CN : 0 / CN : 4 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 4 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 4 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 4 / CN : 0 / CN : 18 / CN : 0 / CN : 24 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 4 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 26 / CN : 18 / CN : 28 / CN : 0 / CN : 6 / CN : 0 / CN : 6 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 4 / CN : 0 / CN : 4 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 6 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 4 / CN : 0 / CN : 6 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 4 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 18 / CN : 24 / CN : 21 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 4 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 /
+        Success : 105 / 112
+        Error Correcting and Extracting Datas from DNA Strands
+        Completed
+        Total Data part Number : 224
+        Error DNA part Number : 43
+        Fatal Error DNA part Number : 0
+        Missing DNA part Number : 13
+File 4/15       Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep1_Amp1_Err4.dna        Separating DNA Strands . . .
+        Number of DNA Strands : 112
+        Classifying . . .
+        Analyzing . . .
+CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 8 / CN : 0 / CN : 6 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 6 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 22 / CN : 22 / CN : 24 / CN : 0 / CN : 22 / CN : 0 / CN : 20 / CN : 16 / CN : 21 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 4 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 4 / CN : 0 / CN : 4 / CN : 0 / CN : 4 / CN : 0 / CN : 6 / CN : 0 / CN : 2 / CN : 0 / CN : 4 / CN : 0 / CN : 0 / CN : 0 / CN : 6 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 4 / CN : 0 / CN : 6 / CN : 0 / CN : 0 / CN : 0 / CN : 24 / CN : 22 / CN : 26 / CN : 26 / CN : 0 / CN : 0 / CN : 24 / CN : 26 / CN : 22 / CN : 0 / CN : 6 / CN : 0 / CN : 4 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 18 / CN : 18 / CN : 20 / CN : 26 / CN : 21 / CN : 0 / CN : 8 / CN : 0 / CN : 6 / CN : 0 / CN : 2 / CN : 0 / CN : 6 / CN : 0 / CN : 2 / CN : 0 / CN : 4 / CN : 0 / CN : 4 / CN : 0 / CN : 6 / CN : 0 / CN : 4 / CN : 0 / CN : 4 / CN : 0 / CN : 4 / CN : 0 / CN : 6 / CN : 0 / CN : 4 / CN : 0 / CN : 21 / CN : 22 / CN : 24 / CN : 0 / CN : 8 / CN : 0 / CN : 10 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 4 / CN : 0 / CN : 8 / CN : 0 / CN : 2 / CN : 0 / CN : 22 / CN : 0 / CN : 36 / CN : 14 / CN : 14 / CN : 14 / CN : 0 / CN : 0 / CN : 20 / CN : 20 / CN : 18 / CN : 18 / CN : 18 / CN : 18 / CN : 18 / CN : 18 / CN : 0 / CN : 0 / CN : 6 / CN : 0 / CN : 18 / CN : 18 / CN : 17 / CN : 0 / CN : 6 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 10 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 6 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 4 / CN : 0 / CN : 4 /
+ CN : 0 / CN : 6 / CN : 0 / CN : 2 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 /
+        Success : 100 / 112
+        Error Correcting and Extracting Datas from DNA Strands
+        Completed
+        Total Data part Number : 224
+        Error DNA part Number : 59
+        Fatal Error DNA part Number : 0
+        Missing DNA part Number : 27
+File 5/15       Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep1_Amp1_Err5.dna
+        Separating DNA Strands . . .
+        Number of DNA Strands : 112
+        Classifying . . .
+        Analyzing . . .
+CN : 20 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 28 / CN : 0 / CN : 20 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 6 / CN : 0 / CN : 6 / CN : 0 / CN : 12 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 16 / CN : 18 / CN : 20 / CN : 0 / CN : 8 / CN : 0 / CN : 8 / CN : 0 / CN : 6 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 22 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 4 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 20 / CN : 0 / CN : 36 / CN : 22 / CN : 31 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 8 / CN : 0 / CN : 4 / CN : 0 / CN : 10 / CN : 0 / CN : 30 / CN : 26 / CN : 14 / CN : 14 / CN : 0 / CN : 0 / CN : 18 / CN : 0 / CN : 8 / CN : 0 / CN : 6 / CN : 0 / CN : 4 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 6 / CN : 0 / CN : 6 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 10 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 8 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 24 / CN : 0 / CN : 8 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 22 / CN : 0 / CN : 12 / CN : 0 / CN : 6 / CN : 0 / CN : 30 / CN : 22 / CN : 16 / CN : 16 / CN : 0 / CN : 0 / CN : 2 / CN : 0 / CN : 24 / CN : 22 / CN : 27 / CN : 0 / CN : 8 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 37 / CN : 26 / CN : 30 / CN : 0 / CN : 8 / CN : 0 / CN : 18 / CN : 36 / CN : 17 / CN : 0 / CN : 10 / CN : 0 / CN : 6 / CN : 0 / CN : 23 / CN : 20 / CN : 22 / CN : 22 / CN : 0 / CN : 0 / CN : 4 / CN : 0 / CN : 6 / CN : 0 / CN : 8 / CN : 0 / CN : 10 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 22 / CN : 22 / CN : 20 / CN : 20 / CN : 36 / CN : 29 /
+        Success : 87 / 112
+        Error Correcting and Extracting Datas from DNA Strands
+        Completed
+        Total Data part Number : 224
+        Error DNA part Number : 88
+        Fatal Error DNA part Number : 0
+        Missing DNA part Number : 50
+File 6/15       Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep1_Amp2_Err1.dna
+        Separating DNA Strands . . .
+        Number of DNA Strands : 448
+        Classifying . . .
+        Analyzing . . .
+CN : 1 / CN : 2 / CN : 0 / CN : 1 / CN : 1 / CN : 0 / CN : 2 / CN : 1 / CN : 3 / CN : 3 / CN : 5 / CN : 1 / CN : 2 / CN : 2 / CN : 1 / CN : 0 / CN : 0 / CN : 0 / CN : 1 / CN : 2 / CN : 2 / CN : 1 / CN : 1 / CN : 0 / CN : 0 / CN : 1 / CN : 0 / CN : 2 / CN : 2 / CN : 1 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 1 / CN : 0 / CN : 3 / CN : 1 / CN : 1 / CN : 0 / CN : 1 / CN : 1 / CN : 1 / CN : 1 / CN : 1 / CN : 0 / CN : 2 / CN : 5 / CN : 4 / CN : 1 / CN : 3 / CN : 1 / CN : 1 / CN : 2 / CN : 2 / CN : 2 / CN : 7 / CN : 12 / CN : 3 / CN : 0 / CN : 1 / CN : 2 / CN : 12 / CN : 3 / CN : 12 / CN : 2 / CN : 2 / CN : 1 / CN : 1 / CN : 0 / CN : 0 / CN : 0 / CN : 1 / CN : 0 / CN : 2 / CN : 1 / CN : 4 / CN : 0 / CN : 0 / CN : 0 / CN : 1 / CN : 1 / CN : 1 / CN : 3 / CN : 11 / CN : 7 / CN : 13 / CN : 1 / CN : 1 / CN : 2 / CN : 3 / CN : 0 / CN : 1 / CN : 1 / CN : 1 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 1 / CN : 2 / CN : 2 / CN : 2 / CN : 3 / CN : 2 / CN : 1 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 3 / CN : 0 / CN : 0 / CN : 0 / CN : 1 / CN : 0 / CN : 1 / CN : 0 / CN : 2 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 1 / CN : 3 / CN : 0 / CN : 1 / CN : 0 / CN : 0 / CN : 1 / CN : 3 / CN : 1 / CN : 2 / CN : 0 / CN : 2 / CN : 2 / CN : 2 / CN : 1 / CN : 2 / CN : 0 / CN : 1 / CN : 2 / CN : 1 / CN : 2 / CN : 1 / CN : 2 / CN : 2 / CN : 1 / CN : 1 / CN : 1 / CN : 1 / CN : 0 / CN : 0 / CN : 0 / CN : 6 / CN : 0 / CN : 0 / CN : 1 / CN : 3 / CN : 2 / CN : 2 / CN : 0 / CN : 3 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 1 / CN : 0 / CN : 1 / CN : 2 / CN : 1 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 1 / CN : 2 / CN : 3 / CN : 2 / CN : 2 / CN : 4 / CN : 2 / CN : 0 / CN : 2 / CN : 1 / CN : 0 / CN : 0 / CN : 1 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 1 / CN : 3 / CN : 3 / CN : 2 / CN : 0 / CN : 1 / CN : 0 / CN : 2 / CN : 1 / CN : 1 / CN : 1 / CN : 3 / CN : 2 / CN : 2 / CN : 1 / CN : 3 / CN : 0 / CN : 0 / CN : 0 / CN : 1 / CN : 4 / CN : 2 / CN : 1 / CN : 5 / CN : 0 / CN : 1 / CN : 1 /
+        Success : 443 / 448
+        Error Correcting and Extracting Datas from DNA Strands
+        Completed
+        Total Data part Number : 224
+        Error DNA part Number : 3
+        Fatal Error DNA part Number : 0
+        Missing DNA part Number : 0
+File 7/15       Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep1_Amp2_Err2.dna
+        Separating DNA Strands . . .
+        Number of DNA Strands : 448
+        Classifying . . .
+        Analyzing . . .
+CN : 2 / CN : 3 / CN : 3 / CN : 1 / CN : 2 / CN : 1 / CN : 12 / CN : 13 / CN : 10 / CN : 2 / CN : 2 / CN : 1 / CN : 10 / CN : 12 / CN : 14 / CN : 3 / CN : 2 / CN : 2 / CN : 2 / CN : 1 / CN : 2 / CN : 0 / CN : 3 / CN : 1 / CN : 3 / CN : 3 / CN : 4 / CN : 0 / CN : 1 / CN : 2 / CN : 2 / CN : 2 / CN : 1 / CN : 2 / CN : 4 / CN : 2 / CN : 2 / CN : 1 / CN : 1 / CN : 3 / CN : 1 / CN : 1 / CN : 15 / CN : 9 / CN : 10 / CN : 0 / CN : 1 / CN : 0 / CN : 1 / CN : 2 / CN : 1 / CN : 0 / CN : 2 / CN : 1 / CN : 1 / CN : 0 / CN : 3 / CN : 2 / CN : 4 / CN : 1 / CN : 2 / CN : 1 / CN : 3 / CN : 1 / CN : 3 / CN : 4 / CN : 1 / CN : 2 / CN : 4 / CN : 1 / CN : 4 / CN : 3 / CN : 2 / CN : 0 / CN : 1 / CN : 1 / CN : 3 / CN : 0 / CN : 1 / CN : 1 / CN : 1 / CN : 3 / CN : 3 / CN : 2 / CN : 2 / CN : 1 / CN : 1 / CN : 2 / CN : 3 / CN : 1 / CN : 1 / CN : 2 / CN : 2 / CN : 1 / CN : 3 / CN : 2 / CN : 3 / CN : 1 / CN : 8 / CN : 1 / CN : 4 / CN : 0 / CN : 0 / CN : 3 / CN : 1 / CN : 0 / CN : 14 / CN : 11 / CN : 9 / CN : 1 / CN : 2 / CN : 1 / CN : 1 / CN : 0 / CN : 0 / CN : 0 / CN : 1 / CN : 3 / CN : 5 / CN : 2 / CN : 2 / CN : 1 / CN : 0 / CN : 0 / CN : 2 / CN : 4 / CN : 6 / CN : 0 / CN : 3 / CN : 2 / CN : 2 / CN : 2 / CN : 1 / CN : 1 / CN : 3 / CN : 0 / CN : 3 / CN : 2 / CN : 16 / CN : 12 / CN : 12 / CN : 1 / CN : 3 / CN : 5 / CN : 5 / CN : 2 /
+ CN : 1 / CN : 0 / CN : 1 / CN : 1 / CN : 3 / CN : 3 / CN : 3 / CN : 0 / CN : 2 / CN : 1 / CN : 3 / CN : 1 / CN : 6 / CN : 1 / CN : 3 / CN : 0 / CN : 2 / CN : 1 / CN : 5 / CN : 4 / CN : 3 / CN : 0 / CN : 4 / CN : 0 / CN : 4 / CN : 2 / CN : 3 / CN : 1 / CN : 3 / CN : 3 / CN : 19 / CN : 12 / CN : 14 / CN : 1 / CN : 3 / CN : 2 / CN : 4 / CN : 3 / CN : 3 / CN : 6 / CN : 4 / CN : 0 / CN : 3 / CN : 0 / CN : 1 / CN : 1 / CN : 1 / CN : 1 / CN : 7 / CN : 2 / CN : 2 / CN : 0 / CN : 0 / CN : 4 / CN : 3 / CN : 4 / CN : 5 / CN : 2 / CN : 1 / CN : 1 / CN : 13 / CN : 13 / CN : 10 / CN : 0 / CN : 2 / CN : 4 / CN : 3 / CN : 1 / CN : 1 / CN : 1 / CN : 3 / CN : 0 / CN : 2 / CN : 1 / CN : 11 / CN : 11 / CN : 13 / CN : 0 /
+        Success : 436 / 448
+        Error Correcting and Extracting Datas from DNA Strands
+        Completed
+        Total Data part Number : 224
+        Error DNA part Number : 4
+        Fatal Error DNA part Number : 0
+        Missing DNA part Number : 0
+File 8/15       Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep1_Amp2_Err3.dna
+        Separating DNA Strands . . .
+        Number of DNA Strands : 448
+        Classifying . . .
+        Analyzing . . .
+CN : 3 / CN : 1 / CN : 3 / CN : 0 / CN : 4 / CN : 0 / CN : 1 / CN : 1 / CN : 13 / CN : 22 / CN : 12 / CN : 0 / CN : 2 / CN : 3 / CN : 9 / CN : 4 / CN : 8 / CN : 22 / CN : 11 / CN : 2 / CN : 4 / CN : 6 / CN : 6 / CN : 4 / CN : 17 / CN : 19 / CN : 18 / CN : 9 / CN : 16 / CN : 6 / CN : 11 / CN : 10 / CN : 9 / CN : 4 / CN : 15 / CN : 9 / CN : 14 / CN : 3 / CN : 3 / CN : 3 / CN : 3 / CN : 3 / CN : 1 / CN : 3 /
+ CN : 2 / CN : 3 / CN : 4 / CN : 2 / CN : 2 / CN : 4 / CN : 3 / CN : 4 / CN : 7 / CN : 2 / CN : 13 / CN : 18 / CN : 10 / CN : 2 / CN : 5 / CN : 0 / CN : 4 / CN : 4 / CN : 17 / CN : 11 / CN : 14 / CN : 4 /
+ CN : 5 / CN : 7 / CN : 4 / CN : 2 / CN : 4 / CN : 2 / CN : 3 / CN : 7 / CN : 4 / CN : 8 / CN : 9 / CN : 4 / CN : 7 / CN : 2 / CN : 4 / CN : 2 / CN : 5 / CN : 4 / CN : 2 / CN : 0 / CN : 3 / CN : 3 / CN : 7 / CN : 5 / CN : 4 / CN : 4 / CN : 4 / CN : 3 / CN : 10 / CN : 10 / CN : 17 / CN : 2 / CN : 1 / CN : 6 / CN : 1 / CN : 0 / CN : 0 / CN : 1 / CN : 2 / CN : 2 / CN : 4 / CN : 4 / CN : 4 / CN : 2 / CN : 1 / CN : 1 / CN : 2 / CN : 6 / CN : 1 / CN : 2 / CN : 10 / CN : 11 / CN : 14 / CN : 3 / CN : 6 / CN : 0 /
+ CN : 6 / CN : 0 / CN : 4 / CN : 4 / CN : 5 / CN : 2 / CN : 9 / CN : 4 / CN : 2 / CN : 1 / CN : 4 / CN : 3 / CN : 7 / CN : 3 / CN : 2 / CN : 2 / CN : 7 / CN : 4 / CN : 8 / CN : 1 / CN : 4 / CN : 1 / CN : 5 / CN : 2 / CN : 4 / CN : 1 / CN : 5 / CN : 3 / CN : 4 / CN : 2 / CN : 6 / CN : 2 / CN : 5 / CN : 2 /
+ CN : 5 / CN : 0 / CN : 3 / CN : 2 / CN : 1 / CN : 4 / CN : 3 / CN : 5 / CN : 7 / CN : 4 / CN : 5 / CN : 2 / CN : 15 / CN : 14 / CN : 16 / CN : 0 / CN : 13 / CN : 14 / CN : 13 / CN : 2 / CN : 4 / CN : 3 /
+ CN : 3 / CN : 2 / CN : 5 / CN : 3 / CN : 6 / CN : 7 / CN : 5 / CN : 3 / CN : 5 / CN : 1 / CN : 3 / CN : 3 / CN : 6 / CN : 4 / CN : 5 / CN : 2 / CN : 14 / CN : 11 / CN : 13 / CN : 2 / CN : 5 / CN : 2 / CN : 4 / CN : 4 / CN : 1 / CN : 4 / CN : 6 / CN : 0 / CN : 3 / CN : 2 / CN : 7 / CN : 2 / CN : 8 / CN : 9 / CN : 19 / CN : 2 / CN : 6 / CN : 1 / CN : 8 / CN : 6 / CN : 8 / CN : 3 / CN : 13 / CN : 11 / CN : 28 / CN : 3 /
+        Success : 418 / 448
+        Error Correcting and Extracting Datas from DNA Strands
+        Completed
+        Total Data part Number : 224
+        Error DNA part Number : 9
+        Fatal Error DNA part Number : 0
+        Missing DNA part Number : 0
+File 9/15       Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep1_Amp2_Err4.dna
+        Separating DNA Strands . . .
+        Number of DNA Strands : 448
+        Classifying . . .
+        Analyzing . . .
+CN : 4 / CN : 1 / CN : 6 / CN : 10 / CN : 13 / CN : 14 / CN : 18 / CN : 16 / CN : 18 / CN : 31 / CN : 18 / CN : 5 / CN : 8 / CN : 6 / CN : 3 / CN : 2 / CN : 5 / CN : 10 / CN : 17 / CN : 12 / CN : 15 / CN : 8 / CN : 13 / CN : 8 / CN : 5 / CN : 0 / CN : 15 / CN : 17 / CN : 28 / CN : 7 / CN : 19 / CN : 6 / CN : 5 / CN : 2 / CN : 2 / CN : 2 / CN : 5 / CN : 7 / CN : 8 / CN : 5 / CN : 6 / CN : 2 / CN : 3 / CN : 3 / CN : 6 / CN : 5 / CN : 8 / CN : 6 / CN : 9 / CN : 6 / CN : 4 / CN : 0 / CN : 4 / CN : 6 / CN : 9 / CN : 4 / CN : 6 / CN : 3 / CN : 8 / CN : 5 / CN : 6 / CN : 3 / CN : 26 / CN : 15 / CN : 19 / CN : 4 / CN : 3 / CN : 2 / CN : 2 / CN : 9 / CN : 6 / CN : 3 / CN : 5 / CN : 2 / CN : 7 / CN : 7 / CN : 13 / CN : 7 / CN : 8 / CN : 4 / CN : 8 / CN : 3 / CN : 17 / CN : 14 / CN : 15 / CN : 7 / CN : 6 / CN : 3 / CN : 8 / CN : 10 / CN : 10 / CN : 10 / CN : 7 / CN : 2 / CN : 11 / CN : 7 / CN : 16 / CN : 16 / CN : 13 / CN : 4 / CN : 5 / CN : 6 / CN : 9 / CN : 4 / CN : 10 / CN : 10 / CN : 8 / CN : 2 / CN : 7 / CN : 3 / CN : 6 / CN : 4 / CN : 14 / CN : 17 / CN : 23 / CN : 4 / CN : 7 / CN : 7 / CN : 7 / CN : 6 / CN : 10 / CN : 5 / CN : 10 / CN : 2 / CN : 6 / CN : 6 / CN : 11 / CN : 2 / CN : 6 / CN : 6 / CN : 1 / CN : 2 / CN : 6 / CN : 0 / CN : 7 / CN : 2 / CN : 6 / CN : 2 / CN : 10 / CN : 3 / CN : 11 / CN : 3 / CN : 12 / CN : 13 / CN : 14 / CN : 4 / CN : 6 / CN : 7 / CN : 5 / CN : 4 / CN : 6 / CN : 8 / CN : 5 / CN : 3 / CN : 14 / CN : 6 / CN : 8 / CN : 4 / CN : 5 / CN : 4 / CN : 11 / CN : 7 / CN : 12 / CN : 6 / CN : 8 / CN : 12 / CN : 3 / CN : 3 / CN : 8 / CN : 8 / CN : 11 / CN : 8 / CN : 7 / CN : 8 / CN : 13 / CN : 13 / CN : 14 / CN : 7 / CN : 16 / CN : 18 / CN : 18 / CN : 5 / CN : 5 / CN : 2 / CN : 6 / CN : 5 / CN : 9 / CN : 6 / CN : 6 / CN : 5 / CN : 9 / CN : 4 / CN : 9 / CN : 0 / CN : 11 / CN : 7 / CN : 6 / CN : 4 / CN : 25 / CN : 4 / CN : 13 / CN : 10 / CN : 13 / CN : 13 / CN : 6 / CN : 2 / CN : 1 / CN : 2 / CN : 10 / CN : 6 / CN : 9 / CN : 2 / CN : 12 / CN : 8 / CN : 16 / CN : 13 / CN : 13 / CN : 6 / CN : 4 / CN : 3 / CN : 12 / CN : 5 / CN : 8 / CN : 2 /
+        Success : 392 / 448
+        Error Correcting and Extracting Datas from DNA Strands
+        Completed
+        Total Data part Number : 224
+        Error DNA part Number : 13
+        Fatal Error DNA part Number : 0
+        Missing DNA part Number : 0
+File 10/15      Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep1_Amp2_Err5.dna
+        Separating DNA Strands . . .
+        Number of DNA Strands : 448
+        Classifying . . .
+        Analyzing . . .
+CN : 19 / CN : 10 / CN : 12 / CN : 0 / CN : 14 / CN : 18 / CN : 18 / CN : 12 / CN : 18 / CN : 22 / CN : 19 / CN : 8 / CN : 13 / CN : 0 / CN : 16 / CN : 14 / CN : 29 / CN : 24 / CN : 18 / CN : 18 / CN : 24 / CN : 14 / CN : 20 / CN : 10 / CN : 10 / CN : 0 / CN : 6 / CN : 14 / CN : 21 / CN : 23 / CN : 20 / CN : 22 / CN : 23 / CN : 8 / CN : 15 / CN : 9 / CN : 20 / CN : 18 / CN : 12 / CN : 12 / CN : 10 / CN : 10 / CN : 19 / CN : 28 / CN : 27 / CN : 22 / CN : 19 / CN : 27 / CN : 29 / CN : 25 / CN : 15 / CN : 7 / CN : 12 / CN : 10 / CN : 13 / CN : 9 / CN : 16 / CN : 13 / CN : 21 / CN : 13 / CN : 24 / CN : 8 / CN : 12 / CN : 4 / CN : 13 / CN : 20 / CN : 19 / CN : 0 / CN : 5 / CN : 4 / CN : 7 / CN : 4 / CN : 17 / CN : 24 / CN : 12 / CN : 6 / CN : 11 / CN : 8 / CN : 14 / CN : 8 / CN : 7 / CN : 12 / CN : 15 / CN : 4 / CN : 22 / CN : 15 / CN : 20 / CN : 14 / CN : 11 / CN : 10 / CN : 14 / CN : 8 / CN : 12 / CN : 8 / CN : 26 / CN : 34 / CN : 19 / CN : 12 / CN : 12 / CN : 14 / CN : 10 / CN : 7 / CN : 9 / CN : 10 / CN : 16 / CN : 9 / CN : 21 / CN : 28 / CN : 25 / CN : 4 / CN : 16 / CN : 11 / CN : 25 / CN : 5 / CN : 14 / CN : 10 / CN : 17 / CN : 17 / CN : 14 / CN : 7 / CN : 11 / CN : 6 / CN : 20 / CN : 13 / CN : 22 / CN : 8 / CN : 15 / CN : 16 / CN : 13 / CN : 6 / CN : 13 / CN : 7 / CN : 3 / CN : 0 / CN : 6 / CN : 8 / CN : 12 / CN : 10 / CN : 22 / CN : 15 / CN : 21 / CN : 8 / CN : 16 / CN : 11 / CN : 14 / CN : 4 / CN : 10 / CN : 17 / CN : 9 / CN : 10 / CN : 26 / CN : 25 / CN : 21 / CN : 15 / CN : 26 / CN : 0 / CN : 17 / CN : 18 / CN : 25 / CN : 19 / CN : 20 / CN : 4 / CN : 14 / CN : 8 / CN : 14 / CN : 0 / CN : 9 / CN : 2 / CN : 19 / CN : 23 / CN : 22 / CN : 12 / CN : 13 / CN : 9 / CN : 16 / CN : 23 / CN : 29 / CN : 6 / CN : 11 / CN : 7 / CN : 14 / CN : 26 / CN : 16 / CN : 4 / CN : 8 / CN : 6 / CN : 3 / CN : 8 / CN : 7 / CN : 6 / CN : 11 / CN : 12 / CN : 16 / CN : 0 / CN : 22 / CN : 0 / CN : 15 / CN : 8 / CN : 18 / CN : 16 / CN : 19 / CN : 10 / CN : 24 / CN : 20 / CN : 22 / CN : 1 / CN : 15 / CN : 6 / CN : 32 / CN : 16 / CN : 16 / CN : 8 / CN : 6 / CN : 0 / CN : 10 / CN : 9 / CN : 9 / CN : 8 / CN : 11 / CN : 12 / CN : 12 / CN : 12 / CN : 22 / CN : 28 /
+        Success : 347 / 448
+        Error Correcting and Extracting Datas from DNA Strands
+        Completed
+        Total Data part Number : 224
+        Error DNA part Number : 32
+        Fatal Error DNA part Number : 0
+        Missing DNA part Number : 0
+File 11/15      Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep1_Amp3_Err1.dna
+        Separating DNA Strands . . .
+        Number of DNA Strands : 1792
+        Classifying . . .
+        Analyzing . . .
+CN : 5 / CN : 4 / CN : 5 / CN : 4 / CN : 3 / CN : 4 / CN : 7 / CN : 5 / CN : 9 / CN : 3 / CN : 4 / CN : 1 / CN : 2 / CN : 0 / CN : 5 / CN : 3 / CN : 4 / CN : 3 / CN : 9 / CN : 2 / CN : 2 / CN : 4 / CN : 13 / CN : 10 / CN : 14 / CN : 3 / CN : 10 / CN : 10 / CN : 13 / CN : 1 / CN : 16 / CN : 10 / CN : 13 / CN : 4 / CN : 5 / CN : 3 / CN : 7 / CN : 1 / CN : 5 / CN : 4 / CN : 7 / CN : 1 / CN : 2 / CN : 0 / CN : 1 / CN : 1 / CN : 28 / CN : 14 / CN : 14 / CN : 3 / CN : 5 / CN : 1 / CN : 1 / CN : 0 / CN : 2 / CN : 1 / CN : 5 / CN : 3 / CN : 11 / CN : 8 / CN : 12 / CN : 1 / CN : 4 / CN : 0 / CN : 2 / CN : 1 / CN : 9 / CN : 11 / CN : 11 / CN : 4 / CN : 7 / CN : 4 / CN : 14 / CN : 10 / CN : 14 / CN : 3 / CN : 6 / CN : 2 / CN : 9 / CN : 8 / CN : 15 / CN : 1 / CN : 1 / CN : 1 / CN : 3 / CN : 0 / CN : 6 / CN : 3 / CN : 2 / CN : 1 / CN : 3 / CN : 1 / CN : 7 / CN : 4 / CN : 12 / CN : 9 / CN : 13 / CN : 3 / CN : 4 / CN : 3 / CN : 26 / CN : 9 / CN : 10 / CN : 5 / CN : 5 / CN : 0 / CN : 12 / CN : 10 / CN : 16 / CN : 3 / CN : 1 / CN : 0 / CN : 4 / CN : 1 / CN : 6 / CN : 2 / CN : 8 / CN : 4 / CN : 13 / CN : 17 / CN : 11 / CN : 3 / CN : 3 / CN : 2 / CN : 5 / CN : 2 / CN : 15 / CN : 15 / CN : 16 / CN : 1 / CN : 3 / CN : 3 / CN : 3 / CN : 2 / CN : 4 / CN : 2 / CN : 11 / CN : 12 / CN : 21 / CN : 4 / CN : 8 / CN : 2 / CN : 3 / CN : 1 / CN : 2 / CN : 2 / CN : 5 / CN : 3 / CN : 2 / CN : 2 / CN : 1 / CN : 0 / CN : 2 / CN : 2 / CN : 1 / CN : 1 / CN : 6 / CN : 3 / CN : 17 / CN : 14 / CN : 17 / CN : 16 / CN : 13 / CN : 1 / CN : 14 / CN : 10 / CN : 11 / CN : 1 / CN : 14 / CN : 8 / CN : 10 / CN : 2 / CN : 6 / CN : 3 / CN : 3 / CN : 1 / CN : 7 / CN : 3 / CN : 4 / CN : 3 / CN : 3 / CN : 2 / CN : 3 / CN : 1 / CN : 2 / CN : 2 / CN : 5 / CN : 3 / CN : 8 / CN : 4 / CN : 12 / CN : 3 / CN : 4 / CN : 0 / CN : 5 / CN : 3 / CN : 3 / CN : 2 / CN : 14 / CN : 11 / CN : 16 / CN : 12 / CN : 16 / CN : 3 / CN : 6 / CN : 1 / CN : 22 / CN : 16 / CN : 25 / CN : 3 / CN : 2 / CN : 2 / CN : 2 / CN : 1 / CN : 5 / CN : 2 / CN : 3 / CN : 0 / CN : 7 / CN : 1 / CN : 5 / CN : 1 / CN : 2 / CN : 1 /
+        Success : 1766 / 1792
+        Error Correcting and Extracting Datas from DNA Strands
+        Completed
+        Total Data part Number : 224
+        Error DNA part Number : 3
+        Fatal Error DNA part Number : 0
+        Missing DNA part Number : 0
+File 12/15      Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep1_Amp3_Err2.dna
+        Separating DNA Strands . . .
+        Number of DNA Strands : 1792
+        Classifying . . .
+        Analyzing . . .
+CN : 17 / CN : 1 / CN : 31 / CN : 16 / CN : 24 / CN : 13 / CN : 18 / CN : 11 / CN : 16 / CN : 3 / CN : 8 / CN : 4 / CN : 15 / CN : 13 / CN : 12 / CN : 4 / CN : 7 / CN : 5 / CN : 6 / CN : 5 / CN : 5 / CN : 2 / CN : 7 / CN : 2 / CN : 13 / CN : 6 / CN : 14 / CN : 15 / CN : 16 / CN : 3 / CN : 16 / CN : 12 / CN : 17 / CN : 2 / CN : 12 / CN : 6 / CN : 10 / CN : 7 / CN : 13 / CN : 5 / CN : 16 / CN : 13 / CN : 31 / CN : 12 / CN : 14 / CN : 3 / CN : 12 / CN : 11 / CN : 14 / CN : 0 / CN : 5 / CN : 2 / CN : 18 / CN : 10 / CN : 11 / CN : 4 / CN : 14 / CN : 11 / CN : 15 / CN : 6 / CN : 6 / CN : 1 / CN : 13 / CN : 11 /
+ CN : 15 / CN : 4 / CN : 6 / CN : 2 / CN : 5 / CN : 1 / CN : 6 / CN : 3 / CN : 6 / CN : 0 / CN : 3 / CN : 1 / CN : 8 / CN : 3 / CN : 3 / CN : 4 / CN : 10 / CN : 1 / CN : 8 / CN : 0 / CN : 7 / CN : 4 / CN : 7 / CN : 1 / CN : 5 / CN : 6 / CN : 9 / CN : 3 / CN : 12 / CN : 12 / CN : 21 / CN : 11 / CN : 12 / CN : 5 / CN : 5 / CN : 1 / CN : 6 / CN : 4 / CN : 8 / CN : 1 / CN : 20 / CN : 18 / CN : 14 / CN : 5 / CN : 4 / CN : 3 / CN : 6 / CN : 5 / CN : 11 / CN : 12 / CN : 13 / CN : 2 / CN : 3 / CN : 7 / CN : 4 / CN : 4 / CN : 9 / CN : 5 / CN : 11 / CN : 2 / CN : 9 / CN : 3 / CN : 12 / CN : 11 / CN : 15 / CN : 4 / CN : 14 / CN : 3 / CN : 12 / CN : 12 / CN : 10 / CN : 1 / CN : 2 / CN : 4 / CN : 12 / CN : 2 / CN : 10 / CN : 5 / CN : 3 / CN : 1 / CN : 5 / CN : 5 / CN : 5 / CN : 2 / CN : 4 / CN : 4 / CN : 8 / CN : 5 / CN : 5 / CN : 3 / CN : 11 / CN : 3 / CN : 8 / CN : 4 / CN : 19 / CN : 17 / CN : 17 / CN : 7 / CN : 9 /
+ CN : 3 / CN : 7 / CN : 7 / CN : 5 / CN : 2 / CN : 5 / CN : 1 / CN : 16 / CN : 11 / CN : 13 / CN : 1 /
+ CN : 5 / CN : 4 / CN : 6 / CN : 3 / CN : 10 / CN : 2 / CN : 11 / CN : 12 / CN : 15 / CN : 3 / CN : 4 / CN : 2 / CN : 6 / CN : 7 / CN : 9 / CN : 1 / CN : 6 / CN : 3 / CN : 6 / CN : 3 / CN : 8 / CN : 3 / CN : 6 / CN : 4 / CN : 7 / CN : 3 / CN : 8 / CN : 7 / CN : 10 / CN : 4 / CN : 7 / CN : 3 / CN : 11 / CN : 3 / CN : 11 / CN : 2 / CN : 7 / CN : 4 / CN : 11 / CN : 12 / CN : 14 / CN : 2 / CN : 11 / CN : 5 / CN : 11 / CN : 4 / CN : 4 / CN : 4 / CN : 30 / CN : 19 /
+        Success : 1731 / 1792
+        Error Correcting and Extracting Datas from DNA Strands
+        Completed
+        Total Data part Number : 224
+        Error DNA part Number : 3
+        Fatal Error DNA part Number : 0
+        Missing DNA part Number : 0
+File 13/15      Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep1_Amp3_Err3.dna
+        Separating DNA Strands . . .
+        Number of DNA Strands : 1792
+        Classifying . . .
+        Analyzing . . .
+CN : 34 / CN : 18 / CN : 20 / CN : 7 / CN : 13 / CN : 10 / CN : 14 / CN : 4 / CN : 23 / CN : 17 / CN : 28 / CN : 12 / CN : 14 / CN : 4 / CN : 18 / CN : 14 / CN : 16 / CN : 5 / CN : 19 / CN : 18 / CN : 16 / CN : 12 / CN : 15 / CN : 3 / CN : 7 / CN : 8 / CN : 22 / CN : 13 / CN : 19 / CN : 9 / CN : 17 / CN : 14 / CN : 15 / CN : 7 / CN : 9 / CN : 2 / CN : 5 / CN : 3 / CN : 17 / CN : 13 / CN : 19 / CN : 11 / CN : 13 / CN : 5 / CN : 11 / CN : 6 / CN : 13 / CN : 7 / CN : 7 / CN : 7 / CN : 9 / CN : 0 / CN : 5 / CN : 3 / CN : 19 / CN : 11 / CN : 17 / CN : 6 / CN : 17 / CN : 5 / CN : 23 / CN : 16 / CN : 21 / CN : 11 / CN : 17 / CN : 13 / CN : 21 / CN : 10 / CN : 19 / CN : 15 / CN : 22 / CN : 14 / CN : 14 / CN : 6 /
+ CN : 13 / CN : 9 / CN : 29 / CN : 13 / CN : 18 / CN : 2 / CN : 5 / CN : 3 / CN : 2 / CN : 3 / CN : 4 / CN : 4 / CN : 10 / CN : 2 / CN : 7 / CN : 2 / CN : 19 / CN : 14 / CN : 15 / CN : 2 / CN : 31 / CN : 17 / CN : 23 / CN : 9 / CN : 12 / CN : 9 / CN : 20 / CN : 4 / CN : 6 / CN : 2 / CN : 16 / CN : 11 / CN : 12 / CN : 3 / CN : 5 / CN : 6 / CN : 5 / CN : 7 / CN : 14 / CN : 12 / CN : 21 / CN : 7 / CN : 19 / CN : 11 / CN : 13 / CN : 2 / CN : 20 / CN : 8 / CN : 18 / CN : 7 / CN : 29 / CN : 17 / CN : 31 / CN : 12 / CN : 21 / CN : 10 / CN : 13 / CN : 7 / CN : 9 / CN : 7 / CN : 14 / CN : 18 / CN : 18 / CN : 1 / CN : 18 / CN : 11 / CN : 21 / CN : 13 / CN : 20 / CN : 11 / CN : 15 / CN : 2 / CN : 10 / CN : 6 / CN : 28 / CN : 10 / CN : 21 / CN : 13 / CN : 15 / CN : 4 / CN : 13 / CN : 8 / CN : 13 / CN : 5 / CN : 31 / CN : 12 / CN : 16 / CN : 5 / CN : 15 / CN : 11 / CN : 22 / CN : 5 / CN : 8 / CN : 2 / CN : 11 / CN : 8 / CN : 23 / CN : 11 / CN : 17 / CN : 5 / CN : 8 / CN : 3 / CN : 14 / CN : 10 / CN : 25 / CN : 13 / CN : 18 / CN : 13 / CN : 18 / CN : 5 / CN : 9 / CN : 10 / CN : 13 / CN : 4 / CN : 16 / CN : 14 / CN : 17 / CN : 11 / CN : 29 / CN : 12 / CN : 24 / CN : 5 / CN : 8 / CN : 5 / CN : 25 / CN : 13 / CN : 20 / CN : 15 / CN : 17 / CN : 4 / CN : 12 / CN : 6 / CN : 17 / CN : 10 / CN : 14 / CN : 3 / CN : 7 / CN : 7 /
+ CN : 14 / CN : 14 / CN : 24 / CN : 9 / CN : 9 / CN : 2 / CN : 11 / CN : 2 / CN : 7 / CN : 4 / CN : 22 / CN : 11 /
+        Success : 1682 / 1792
+        Error Correcting and Extracting Datas from DNA Strands
+        Completed
+        Total Data part Number : 224
+        Error DNA part Number : 3
+        Fatal Error DNA part Number : 0
+        Missing DNA part Number : 0
+File 14/15      Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep1_Amp3_Err4.dna
+        Separating DNA Strands . . .
+        Number of DNA Strands : 1792
+        Classifying . . .
+        Analyzing . . .
+CN : 31 / CN : 17 / CN : 23 / CN : 12 / CN : 16 / CN : 10 / CN : 22 / CN : 15 / CN : 17 / CN : 4 / CN : 21 / CN : 15 / CN : 30 / CN : 18 / CN : 20 / CN : 13 / CN : 34 / CN : 18 / CN : 20 / CN : 5 / CN : 2 / CN : 2 / CN : 10 / CN : 8 / CN : 13 / CN : 4 / CN : 20 / CN : 18 / CN : 30 / CN : 16 / CN : 36 / CN : 19 / CN : 30 / CN : 17 / CN : 15 / CN : 6 / CN : 5 / CN : 6 / CN : 20 / CN : 13 / CN : 19 / CN : 13 / CN : 19 / CN : 14 / CN : 16 / CN : 10 / CN : 16 / CN : 11 / CN : 11 / CN : 3 / CN : 11 / CN : 13 / CN : 21 / CN : 17 / CN : 20 / CN : 18 / CN : 26 / CN : 11 / CN : 22 / CN : 12 / CN : 37 / CN : 14 / CN : 32 / CN : 19 / CN : 21 / CN : 4 / CN : 5 / CN : 2 / CN : 7 / CN : 3 / CN : 18 / CN : 16 / CN : 19 /
+ CN : 2 / CN : 9 / CN : 5 / CN : 11 / CN : 9 / CN : 14 / CN : 4 / CN : 3 / CN : 1 / CN : 18 / CN : 14 / CN : 13 / CN : 0 / CN : 11 / CN : 7 / CN : 9 / CN : 0 / CN : 9 / CN : 14 / CN : 15 / CN : 10 / CN : 14 / CN : 11 / CN : 20 / CN : 10 / CN : 18 / CN : 6 / CN : 17 / CN : 12 / CN : 19 / CN : 6 / CN : 23 /
+ CN : 13 / CN : 20 / CN : 17 / CN : 18 / CN : 15 / CN : 17 / CN : 11 / CN : 17 / CN : 9 / CN : 18 / CN : 17 / CN : 17 / CN : 5 / CN : 16 / CN : 11 / CN : 26 / CN : 8 / CN : 15 / CN : 14 / CN : 16 / CN : 4 / CN : 31 / CN : 18 / CN : 25 / CN : 20 / CN : 35 / CN : 14 / CN : 22 / CN : 19 / CN : 18 / CN : 3 / CN : 15 / CN : 11 / CN : 27 / CN : 14 / CN : 13 / CN : 5 / CN : 19 / CN : 14 / CN : 33 / CN : 11 / CN : 17 / CN : 15 / CN : 19 / CN : 7 / CN : 20 / CN : 4 / CN : 24 / CN : 11 / CN : 13 / CN : 10 / CN : 24 / CN : 17 / CN : 30 / CN : 19 / CN : 22 / CN : 17 / CN : 14 / CN : 6 / CN : 10 / CN : 5 / CN : 18 / CN : 18 / CN : 14 / CN : 12 / CN : 19 / CN : 12 / CN : 24 / CN : 10 / CN : 31 / CN : 19 / CN : 20 / CN : 14 / CN : 21 / CN : 11 / CN : 32 / CN : 18 / CN : 22 / CN : 17 / CN : 18 / CN : 0 / CN : 17 / CN : 9 / CN : 10 / CN : 4 / CN : 27 / CN : 18 / CN : 22 / CN : 5 / CN : 3 / CN : 0 / CN : 16 / CN : 11 / CN : 23 / CN : 18 / CN : 25 / CN : 14 / CN : 13 / CN : 3 / CN : 13 / CN : 4 / CN : 10 / CN : 3 / CN : 10 / CN : 14 / CN : 9 / CN : 0 / CN : 1 / CN : 3 / CN : 10 / CN : 2 / CN : 12 / CN : 7 / CN : 11 / CN : 3 / CN : 25 / CN : 15 / CN : 22 / CN : 19 /
+        Success : 1615 / 1792
+        Error Correcting and Extracting Datas from DNA Strands
+        Completed
+        Total Data part Number : 224
+        Error DNA part Number : 3
+        Fatal Error DNA part Number : 0
+        Missing DNA part Number : 0
+File 15/15      Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep1_Amp3_Err5.dna
+        Separating DNA Strands . . .
+        Number of DNA Strands : 1792
+        Classifying . . .
+        Analyzing . . .
+CN : 34 / CN : 12 / CN : 14 / CN : 6 / CN : 16 / CN : 16 / CN : 36 / CN : 20 / CN : 17 / CN : 0 / CN : 26 / CN : 18 / CN : 29 / CN : 16 / CN : 23 / CN : 18 / CN : 19 / CN : 5 / CN : 18 / CN : 16 / CN : 28 / CN : 15 / CN : 21 / CN : 15 / CN : 22 / CN : 11 / CN : 34 / CN : 17 / CN : 19 / CN : 16 / CN : 32 /
+ CN : 20 / CN : 20 / CN : 12 / CN : 20 / CN : 11 / CN : 11 / CN : 4 / CN : 17 / CN : 13 / CN : 28 / CN : 15 / CN : 28 / CN : 13 / CN : 15 / CN : 6 / CN : 32 / CN : 21 / CN : 28 / CN : 16 / CN : 28 / CN : 12 / CN : 18 / CN : 12 / CN : 19 / CN : 13 / CN : 12 / CN : 0 / CN : 25 / CN : 17 / CN : 19 / CN : 13 / CN : 21 / CN : 11 / CN : 34 / CN : 18 / CN : 32 / CN : 12 / CN : 14 / CN : 11 / CN : 13 / CN : 2 / CN : 3 / CN : 0 / CN : 25 / CN : 16 / CN : 20 / CN : 11 / CN : 19 / CN : 13 / CN : 21 / CN : 15 / CN : 14 / CN : 3 / CN : 17 / CN : 17 / CN : 15 / CN : 3 / CN : 27 / CN : 15 / CN : 13 / CN : 7 / CN : 28 / CN : 15 / CN : 21 / CN : 10 / CN : 34 / CN : 18 / CN : 28 / CN : 18 / CN : 19 / CN : 10 / CN : 14 / CN : 7 / CN : 31 / CN : 15 / CN : 20 / CN : 1 / CN : 12 / CN : 11 / CN : 29 / CN : 19 / CN : 19 / CN : 1 / CN : 21 / CN : 17 / CN : 19 / CN : 16 / CN : 17 / CN : 18 / CN : 26 / CN : 18 / CN : 35 / CN : 9 / CN : 23 / CN : 15 / CN : 27 / CN : 11 / CN : 10 / CN : 0 / CN : 7 / CN : 7 / CN : 8 / CN : 2 / CN : 35 / CN : 14 / CN : 18 / CN : 0 / CN : 2 / CN : 2 / CN : 18 / CN : 17 / CN : 31 / CN : 19 / CN : 21 / CN : 12 / CN : 14 / CN : 0 / CN : 6 / CN : 6 / CN : 13 / CN : 10 / CN : 9 / CN : 10 / CN : 16 / CN : 6 /
+ CN : 13 / CN : 0 / CN : 21 / CN : 18 / CN : 21 / CN : 0 / CN : 0 / CN : 0 / CN : 24 / CN : 17 / CN : 18 / CN : 5 / CN : 12 / CN : 9 / CN : 17 / CN : 11 / CN : 16 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 0 / CN : 11 / CN : 7 / CN : 22 / CN : 16 / CN : 23 / CN : 8 / CN : 10 / CN : 3 / CN : 16 / CN : 15 /
+ CN : 31 / CN : 19 / CN : 29 / CN : 18 / CN : 17 / CN : 0 / CN : 0 / CN : 0 / CN : 2 / CN : 6 / CN : 8 / CN : 0 / CN : 18 / CN : 16 / CN : 15 / CN : 0 / CN : 12 / CN : 15 / CN : 16 / CN : 11 / CN : 13 / CN : 0 / CN : 5 / CN : 7 / CN : 35 / CN : 15 / CN : 29 / CN : 13 / CN : 16 / CN : 9 / CN : 13 / CN : 0 / CN : 10 / CN : 9 / CN : 21 / CN : 16 /
+        Success : 1511 / 1792
+        Error Correcting and Extracting Datas from DNA Strands
+        Completed
+        Total Data part Number : 224
+        Error DNA part Number : 3
+        Fatal Error DNA part Number : 0
+        Missing DNA part Number : 0
+[Save Data]
+File 1/15       Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep1_Amp1_Err1.dna.origin
+File 2/15       Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep1_Amp1_Err2.dna.origin
+File 3/15       Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep1_Amp1_Err3.dna.origin
+File 4/15       Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep1_Amp1_Err4.dna.origin
+File 5/15       Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep1_Amp1_Err5.dna.origin
+File 6/15       Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep1_Amp2_Err1.dna.origin
+File 7/15       Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep1_Amp2_Err2.dna.origin
+File 8/15       Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep1_Amp2_Err3.dna.origin
+File 9/15       Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep1_Amp2_Err4.dna.origin
+File 10/15      Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep1_Amp2_Err5.dna.origin
+File 11/15      Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep1_Amp3_Err1.dna.origin
+File 12/15      Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep1_Amp3_Err2.dna.origin
+File 13/15      Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep1_Amp3_Err3.dna.origin
+File 14/15      Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep1_Amp3_Err4.dna.origin
+File 15/15      Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep1_Amp3_Err5.dna.origin
+END

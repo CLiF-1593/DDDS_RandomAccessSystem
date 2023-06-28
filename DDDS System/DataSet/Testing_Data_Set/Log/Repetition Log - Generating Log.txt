@@ -1,0 +1,97 @@
+<Repetition Log> - Generating Log
+
+[DNA Strand Generating]
+File 1/2
+        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet\Text 1.txt
+        Partition Size : 12nt (3byte)
+        Partitioning . . .
+        Generating DNA Strands . . .
+        DNA Number : 112
+        Repetition : 1.5
+        Generated
+        Number of DNA Strands : 112
+
+File 2/2
+        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet\Text 2.txt
+        Partition Size : 12nt (3byte)
+        Partitioning . . .
+        Generating DNA Strands . . .
+        DNA Number : 113
+        Repetition : 1.5
+        Generated
+        Number of DNA Strands : 113
+
+[Save Data]
+File 1/2        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet\Text 1.txt.dna
+File 2/2        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet\Text 2.txt.dna
+
+[DNA Strand Generating]
+File 1/2
+        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet\Text 1.txt
+        Partition Size : 12nt (3byte)
+        Partitioning . . .
+        Generating DNA Strands . . .
+        DNA Number : 150
+        Repetition : 2.00893
+        Generated
+        Number of DNA Strands : 150
+
+File 2/2
+        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet\Text 2.txt
+        Partition Size : 12nt (3byte)
+        Partitioning . . .
+        Generating DNA Strands . . .
+        DNA Number : 151
+        Repetition : 2.00442
+        Generated
+        Number of DNA Strands : 151
+
+[DNA Strand Generating]
+File 1/2
+        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet\Text 1.txt
+        Partition Size : 12nt (3byte)
+        Partitioning . . .
+        Generating DNA Strands . . .
+        DNA Number : 224
+        Repetition : 3
+        Generated
+        Number of DNA Strands : 224
+
+File 2/2
+        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet\Text 2.txt
+        Partition Size : 12nt (3byte)
+        Partitioning . . .
+        Generating DNA Strands . . .
+        DNA Number : 226
+        Repetition : 3
+        Generated
+        Number of DNA Strands : 226
+
+[Save Data]
+File 1/2        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet\Text 1.txt.dna
+File 2/2        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet\Text 2.txt.dna
+
+[DNA Strand Generating]
+File 1/2
+        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet\Text 1.txt
+        Partition Size : 12nt (3byte)
+        Partitioning . . .
+        Generating DNA Strands . . .
+        DNA Number : 299
+        Repetition : 4.00446
+        Generated
+        Number of DNA Strands : 299
+
+File 2/2
+        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet\Text 2.txt
+        Partition Size : 12nt (3byte)
+        Partitioning . . .
+        Generating DNA Strands . . .
+        DNA Number : 302
+        Repetition : 4.00885
+        Generated
+        Number of DNA Strands : 302
+
+[Save Data]
+File 1/2        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet\Text 1.txt.dna
+File 2/2        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet\Text 2.txt.dna

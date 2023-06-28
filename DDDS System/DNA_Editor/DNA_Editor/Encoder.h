@@ -6,9 +6,11 @@
 class Encoder : public Generator {
 private:
 	std::vector<std::vector<DNA>> dna_set;
-	std::vector<std::wstring> path;
+	std::vector<std::string> path;
+	double repetition;
+
 public:
 	int Input() override;
-	int Generate(std::vector<std::wstring> &path) override;
+	int Generate(std::vector<std::string> &path) override;
 	int Output() override;
 };

@@ -71,7 +71,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>D:\KSA\R&amp;E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor_Cpp\DNA_Editor;D:\KSA\R&amp;E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor;$(IncludePath)</IncludePath>
+    <IncludePath>D:\KSA\R&amp;E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\DNA_Editor;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -130,11 +130,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\DNA_Editor_Cpp\DNA_Editor\FileIO.cpp" />
+    <ClCompile Include="..\..\DNA_Editor\DNA_Editor\FileIO.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\DNA_Editor_Cpp\DNA_Editor\FileIO.h" />
+    <ClInclude Include="..\..\DNA_Editor\DNA_Editor\FileIO.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

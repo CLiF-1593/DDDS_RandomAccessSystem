@@ -1,7 +1,6 @@
 #include "Decoder.h"
 #include "FileIO.h"
 #include "Config.h"
-#include "Convertor.h"
 #include <iostream>
 #include <ezpwd/rs>
 using namespace std;
@@ -10,8 +9,9 @@ int Decoder::Input() {
     return 0;
 }
 
-int Decoder::Generate(std::vector<std::wstring> &path) {
+int Decoder::Generate(std::vector<std::string> &path) {
 	this->path = path;
+	this->result.clear();
 	cout << "[DNA Data Decoding]" << endl;
 	for (int i = 0; i < path.size(); i++) {
 		cout << "File " << i + 1 << "/" << path.size();
@@ -37,20 +37,47 @@ int Decoder::Generate(std::vector<std::wstring> &path) {
 			push_dna.clear();
 		}
 		cout << "\tNumber of DNA Strands : " << dna_set.size() << endl;
-		cout << "\tIndexing . . .";
-		DNA_Pool dna_pool;
+		cout << "\tClassifying . . ." << endl;
+		DNA_Classifier classifier;
 		int fail_cnt = 0;
 		for (int i = 0; i < dna_set.size(); i++) {
-			fail_cnt += IsFailed(dna_pool.AppendDNA(dna_set[i]));
+			fail_cnt += IsFailed(classifier.Append(dna_set[i]));
 		}
-		cout << "\tSuccess : " << dna_set.size() - fail_cnt << " / " << dna_set.size() << endl;
+		//classifier.MergeDNA();
+		cout << "\tAnalyzing . . ." << endl;
+		DNA_Analyzer analyzer;
+		int err_cnt = 0;
+		int fatal_err_cnt = 0;
+		int missing_cnt = 0;
+		string result;
+		for (int i = 0; i < classifier.GetSize(); i++) {
+			DNA_Set set = classifier.GetDataSet(i);
+			analyzer.InitDNA(&set);
+			analyzer.Analyze();
+			string data = analyzer.GetData();
+			if (data.empty()) {
+				data = analyzer.GetLowQualityData();
+				if (data.empty()) {
+					if(set.empty()) missing_cnt++;
+					else {
+						data = classifier.GetDataSet(i)[0].to_binary();
+						fatal_err_cnt++;
+					}
+				}
+				else err_cnt++;
+			}
+			data.resize(BPSToByte(DATA_SIZE));
+			result += data;
+		}
+		cout << endl;
+		cout << "\tSuccess : " << classifier.GetNumber_Total() - classifier.GetNumber_Unknown() << " / " << classifier.GetNumber_Total() << endl;
 		cout << "\tError Correcting and Extracting Datas from DNA Strands" << endl;
-		dna_pool.Processing();
 		cout << "\tCompleted" << endl;
-		cout << "\tTotal DNA Strands Number : " << dna_pool.GetSize() << endl;
-		cout << "\tError Count : " << dna_pool.GetErrCnt() << endl;
-		cout << "\tFatal Error Count : " << dna_pool.GetFatalErrCnt() << endl << endl;
-		this->dna_pool_set.push_back(dna_pool);
+		cout << "\tTotal Data part Number : " << classifier.GetSize() << endl;
+		cout << "\tError DNA part Number : " << err_cnt << endl;
+		cout << "\tFatal Error DNA part Number : " << fatal_err_cnt << endl;
+		cout << "\tMissing DNA part Number : " << missing_cnt << endl;
+		this->result.push_back(result);
 	}
 	return 0;
 }
@@ -64,7 +91,7 @@ int Decoder::Output() {
 		str += ".origin";
 		cout << "\tPath : " << str << endl;
 		string dat;
-		FileIO::SaveFileData(str, this->dna_pool_set[i].GetData());
+		FileIO::SaveFileData(str, this->result[i]);
 	}
 	return 0;
 }

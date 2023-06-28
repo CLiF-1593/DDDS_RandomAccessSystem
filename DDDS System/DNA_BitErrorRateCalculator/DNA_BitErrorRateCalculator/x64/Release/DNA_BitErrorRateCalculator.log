@@ -1,0 +1,8 @@
+﻿  Main.cpp
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_BitErrorRateCalculator\DNA_BitErrorRateCalculator\Main.cpp(61,64): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  Generating code
+  1 of 2188 functions (<0.1%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    11 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  DNA_BitErrorRateCalculator.vcxproj -> D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_BitErrorRateCalculator\x64\Release\DNA_BitErrorRateCalculator.exe

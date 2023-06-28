@@ -1,0 +1,107 @@
+1.
+The cat is short.
+You fry it today.
+
+a -> r
+c -> f
+e -> u
+h -> o
+i -> i
+o -> d
+r -> a
+s -> t
+t -> y
+. -> .
+
+2.
+Her sister led us.
+How did cow sound?
+ 
+d -> u
+e -> o
+h -> h
+i -> i
+l -> s
+r -> w
+s -> d
+t -> c
+u -> n
+. -> ?
+
+3.
+My mouse buy nut.
+It is a great cap.
+
+b e
+e r
+m i 
+n c
+o s
+s g
+t p
+u a
+y t
+. .
+
+4.
+I love moldy bun.
+She gave him box.
+
+b b
+d i
+e a
+i s
+l h
+m v
+n x
+o e
+u o
+v g
+y m
+. .
+
+
+
+5. (7글자)
+РуСский
+-> العربية
+
+6. (7글자)
+English
+-> Español
+
+7. (7글자)
+日本語にほんご
+-> DeutSch
+
+8. (8글자)
+FraNçaIs
+-> ITALiΑno
+
+9. (8글자)
+ΕΛληνικά
+-> 𓂋𓏤𓈖𓆎𓅓𓏏𓊖𓀀
+
+10. (9글자)
+이진율유태우박시후
+-> 한과영최고의연구팀
+
+11. (6글자)
+हिन्दी
+-> 中文বাংলালিপি
+
+
+영어 English (7글자)
+중국어 中文 (2글자)
+독일어 Deutsch (7글자) 
+일본어 日本語にほんご (7글자)
+프랑스어 Français (8글자) 
+스페인어 Español (7글자) 
+러시아어 Русский (7글자)
+힌디어 हिन्दी (6글자) -> 데바나가리
+아랍어 العربية (7글자)
+한국어 한국어 (3글자)
+이탈리아어 Italiano (8글자) 
+이집트 상형문자 𓂋𓏤𓈖𓆎𓅓𓏏𓊖 (7글자)
+그리스어 ΕΛληνικά(8글자)
+벵골어 বাংলা লিপি(4글자)

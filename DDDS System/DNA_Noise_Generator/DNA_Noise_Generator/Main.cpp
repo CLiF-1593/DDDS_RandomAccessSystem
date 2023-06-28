@@ -4,7 +4,7 @@
 using namespace std;
 int main() {
 	cout << "[ DNA Noise Generator ]" << endl << endl;
-	cout << "> DNA Generation System" << endl;
+	cout << "> DNA Random Noise Generation System" << endl;
 	cout << "  ¤¤Random Access of DNA Digital Data Storage System Using Restriction Modification System" << endl << endl;
 	cout << "> 2023 KSA R&E" << endl << endl << endl;
 	system("Pause");
@@ -12,7 +12,7 @@ int main() {
 	srand((unsigned)time(NULL));
 
 	cout << "> Select the Files" << endl;
-	vector<wstring> path = FileIO::GetFileNames();
+	vector<string> path = FileIO::GetFileNames();
 	if (path.empty()) return 0;
 
 	cout << "> Substitution Ratio (%) : ";
@@ -68,6 +68,9 @@ int main() {
 			} while (dat[index] == '\n');
 			dat.erase(dat.begin() + index);
 		}
+		while (str.back() != '.') str.pop_back();
+		str.pop_back();
+		str += "_Err.dna";
 		FileIO::SaveFileData(str, dat);
 	}
 }

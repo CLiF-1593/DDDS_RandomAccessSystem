@@ -1,0 +1,3 @@
+﻿  Main.cpp
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_BitErrorRateCalculator\DNA_BitErrorRateCalculator\Main.cpp(61,64): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  DNA_BitErrorRateCalculator.vcxproj -> D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_BitErrorRateCalculator\x64\Debug\DNA_BitErrorRateCalculator.exe

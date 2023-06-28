@@ -1,0 +1,15 @@
+Repetition
+1.5 2 3 4
+
+Amplification
+1 4 16 64
+
+Synthesis Error : 0.1%
+Sub : 0.043, Ins : 0.017, Del : 0.04
+
+PCR & Sequencing Error : 0.5% 1% 2% 4% 8%
+Sub : 0.215, Ins : 0.085, Del : 0.2
+Sub : 0.43, Ins : 0.17, Del : 0.4
+Sub : 0.86, Ins : 0.34, Del : 0.8
+Sub : 1.72, Ins : 0.68, Del : 1.6
+Sub : 3.44. ins : 1.36, Del : 3.2

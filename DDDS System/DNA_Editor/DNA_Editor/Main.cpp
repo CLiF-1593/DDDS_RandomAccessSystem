@@ -5,7 +5,7 @@
 #include "Encoder.h"
 #include "Decoder.h"
 #include "DNA.h"
-#include "DeltaDNA.h"
+#include <Windows.h>
 using namespace std;
 
 int main() {
@@ -20,7 +20,7 @@ int main() {
 	system("Pause");
 	
 	cout << "> Select the Files" << endl;
-	vector<wstring> path = FileIO::GetFileNames();
+	vector<string> path = FileIO::GetFileNames();
 	if (path.empty()) return 0;
 
 	Generator* generator;
@@ -33,5 +33,8 @@ int main() {
 	generator->Generate(path);
 	generator->Output();
 	delete generator;
+	cout << "END" << endl;
+	system("Pause");
+	while (true) Sleep(1000);
 	return 0;
 }
