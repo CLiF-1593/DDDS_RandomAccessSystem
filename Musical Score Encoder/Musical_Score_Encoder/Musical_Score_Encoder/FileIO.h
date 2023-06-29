@@ -15,5 +15,4 @@ namespace FileXML {
 	tinyxml2::XMLDocument* Read(std::wstring path);
 	std::vector<tinyxml2::XMLNode*> GetNoteXML(tinyxml2::XMLDocument** root);
 	tinyxml2::XMLNode* GetAttribute(tinyxml2::XMLDocument** root);
-	void Write();
 }

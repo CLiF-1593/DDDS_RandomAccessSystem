@@ -1,0 +1,35 @@
+<DNA Plan (Numbers)>
+
+[Lab 1]
+
+File Number : 11
+DNA Number : 11
+Repetition : 4
+Total : 44
+
+
+[Lab 2]
+
+Case 1 (DNA, Rep 2.5)
+: 173 (Bass), 204 (Drum), 237 (Piano High), 277 (Piano Low) = 891
+
+Case 2 (Little Star, Rep 2.5)
+: 148 (Piano High), 85 (Piano Low) = 233
+
+Case 3 (The Lark, Rep 3.0)
+: 181 (1st Violin), 192 (2nd Violin), 210 (Viola), 208 (Cello) = 791
+
+Total : 1915
+
+
+[Lab 3]
+
+File Number : 
+DNA Number : 
+Repetition : 4
+Total : 
+
+
+[Total]
+
+44 + 1915 = 1959

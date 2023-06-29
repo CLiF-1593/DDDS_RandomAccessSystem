@@ -101,6 +101,27 @@ std::string Encoding(EncodingType encoding_type, std::string dat) {
 		}
 		return ret;
 	}
+	if (COORDINATE) {
+		unsigned int num = 0;
+		string ret;
+		for (int i = 0; i < dat.size(); i++) {
+			if (dat[i] == '\n') {
+				ret.push_back((unsigned char)(num >> 24));
+				ret.push_back((unsigned char)(num >> 16));
+				ret.push_back((unsigned char)(num >> 8));
+				ret.push_back((unsigned char)(num));
+				num = 0;
+			}
+			else {
+				unsigned int n = dat[i] - '0';
+				if (0 <= n && n <= 9) {
+					num *= 10;
+					num += n;
+				}
+			}
+		}
+		return ret;
+	}
 }
 
 std::string Decoding(EncodingType encoding_type, int table_type, std::string dat) {
@@ -151,6 +172,23 @@ std::string Decoding(EncodingType encoding_type, int table_type, std::string dat
 			case 0: ret += (all_lang_custom_encoding_table_std[(unsigned char)dat[i]]); break;
 			case 1: ret += (all_lang_custom_encoding_table_1[(unsigned char)dat[i]]); break;
 			}
+		}
+		return ret;
+	}
+	if (COORDINATE) {
+		unsigned int num = 0;
+		string ret;
+		for (int i = 0; i < dat.size(); i += 4) {
+			num = 0;
+			num += (unsigned char)dat[i];
+			num <<= 8;
+			num += (unsigned char)dat[i + 1];
+			num <<= 8;
+			num += (unsigned char)dat[i + 2];
+			num <<= 8;
+			num += (unsigned char)dat[i + 3];
+			ret += to_string(num);
+			ret += "\n";
 		}
 		return ret;
 	}

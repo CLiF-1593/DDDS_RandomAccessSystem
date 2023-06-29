@@ -31,8 +31,16 @@ int Encoder::Generate() {
 		cout << "\tConverting XML to Binary Data . . ." << endl;
 		Attribute attr(attr_xml);
 		string out = "";
+		Note pause_measure;
+		pause_measure.SetRest(true)->SetDuration(2);
 		for (int j = 0; j < note_xml.size(); j++) {
-			int byte = Note(note_xml[j], attr).GetNoteByte();
+			int byte = 0;
+			if (note_xml[j]) {
+				byte = Note(note_xml[j], attr).GetNoteByte();
+			}
+			else {
+				byte = pause_measure.GetNoteByte();
+			}
 			out += (char)(byte >> 8);
 			out += (char)(byte);
 			//cout << "\t\t" << this->note_list.back().string();

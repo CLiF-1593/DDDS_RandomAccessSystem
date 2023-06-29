@@ -37,7 +37,7 @@ int Decoder::Generate() {
 
 		//int key, beats, beat_type;
 		//std::string clef_sign;
-		int multi_note, pitched;
+		int pitched;
 		/*cout << "\t> Key : ";
 		cin >> key;
 		cout << "\t> Beats : ";
@@ -46,8 +46,6 @@ int Decoder::Generate() {
 		cin >> beat_type;
 		cout << "\t> Clef Sign : ";
 		cin >> clef_sign;*/
-		cout << "\t> Multinote : ";
-		cin >> multi_note;
 
 		cout << "\t> Pitched : ";
 		cin >> pitched;
@@ -77,16 +75,32 @@ int Decoder::Generate() {
 		InitTie();
 
 		double measure = (double)attribute.GetTimeBeats() / (double)attribute.GetTimeBeatType();
-		if (multi_note) measure *= 2.0;
+		measure *= 2.0;
 
 		double beat_cnt = 0;
 		int voice_num = 1;
 		bool backuped = false;
+		int triplet = 0;
 		for (int i = 0; i < note_list.size(); i++) {
-			auto xml = note_list[i].GetXML(attribute, &doc_template, pitched, voice_num);
-			measure_xml->InsertEndChild(xml);
-			if (!note_list[i].GetTriplet() && !note_list[i].GetChord()) {
-				beat_cnt += note_list[i].GetDuration() * (note_list[i].GetDot() ? 1.5 : 1.0);
+			if (abs(note_list[i].GetDuration() - 2.0) < 0.0001) {
+				if (backuped) {
+					measure_xml->DeleteChild(measure_xml->LastChild());
+					beat_cnt += measure / 2.0;
+				}
+			}
+			else {
+				auto xml = note_list[i].GetXML(attribute, &doc_template, pitched, voice_num);
+				measure_xml->InsertEndChild(xml);
+				if (!note_list[i].GetTriplet() && !note_list[i].GetChord()) {
+					beat_cnt += note_list[i].GetDuration() * (note_list[i].GetDot() ? 1.5 : 1.0);
+				}
+				if (note_list[i].GetTriplet()) {
+					triplet++;
+					if (triplet == 3) {
+						triplet = 0;
+						beat_cnt += note_list[i].GetDuration() * (note_list[i].GetDot() ? 1.5 : 1.0) * 2;
+					}
+				}
 			}
 			if (i != note_list.size() - 1 && !note_list[i + 1].GetChord()) {
 				if (beat_cnt >= measure - 0.0001) {
@@ -96,7 +110,7 @@ int Decoder::Generate() {
 					backuped = false;
 					voice_num = 1;
 				}
-				if (multi_note && !backuped && beat_cnt >= measure / 2.0 - 0.0001) {
+				if (!backuped && beat_cnt >= measure / 2.0 - 0.0001) {
 					auto backup_xml = GetBackupXML(&doc_template, attribute.GetDivision() * measure * 2.0);
 					measure_xml->InsertEndChild(backup_xml);
 					backuped = true;

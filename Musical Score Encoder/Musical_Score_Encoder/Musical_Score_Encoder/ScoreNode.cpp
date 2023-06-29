@@ -194,7 +194,7 @@ tinyxml2::XMLNode* Note::GetXML(Attribute attribute, tinyxml2::XMLDocument** doc
 	duration_element->SetText((int)(this->duration * (double)attribute.GetDivision() * 4.0 * (this->dot ? 1.5 : 1.0)));
 	note_element->InsertEndChild(duration_element);
 
-	std::string duration_type[] = { "whole", "half", "quarter", "eighth", "16th", "32th", "64th" };
+	std::string duration_type[] = { "whole", "half", "quarter", "eighth", "16th", "32nd", "64th" };
 	int index = 6 - log2(this->duration * 64.0);
 	XMLElement* type_element = (*doc)->NewElement("type");
 	type_element->SetText(duration_type[index].c_str());

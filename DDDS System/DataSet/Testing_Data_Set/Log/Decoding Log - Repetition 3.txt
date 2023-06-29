@@ -1,0 +1,204 @@
+<Decoding Log - Repetition 3 (+Candidate Number)>
+
+[ DNA Decoder ]
+
+> DNA Generation System
+  ㄴDNA Digital Data Storage System Using Methylation and Restriction Modification System
+
+> 2023 KSA R&E
+
+[DNA Data Decoding]
+File 1/15       Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep3_Amp1_Err1.dna
+        Separating DNA Strands . . .
+        Number of DNA Strands : 224
+        Classifying . . .
+        Analyzing . . .
+        Success : 220 / 224
+        Error Correcting and Extracting Datas from DNA Strands
+        Completed
+        Total Data part Number : 224
+        Error DNA part Number : 2
+        Fatal Error DNA part Number : 0
+        Missing DNA part Number : 0
+
+File 2/15       Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep3_Amp1_Err2.dna
+        Separating DNA Strands . . .
+        Number of DNA Strands : 224
+        Classifying . . .
+        Analyzing . . .
+        Success : 223 / 224
+        Error Correcting and Extracting Datas from DNA Strands
+        Completed
+        Total Data part Number : 224
+        Error DNA part Number : 3
+        Fatal Error DNA part Number : 0
+        Missing DNA part Number : 0
+
+File 3/15       Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep3_Amp1_Err3.dna
+        Separating DNA Strands . . .
+        Number of DNA Strands : 224
+        Classifying . . .
+        Analyzing . . .
+        Success : 207 / 224
+        Error Correcting and Extracting Datas from DNA Strands
+        Completed
+        Total Data part Number : 224
+        Error DNA part Number : 17
+        Fatal Error DNA part Number : 0
+        Missing DNA part Number : 0
+
+File 4/15       Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep3_Amp1_Err4.dna
+        Separating DNA Strands . . .
+        Number of DNA Strands : 224
+        Classifying . . .
+        Analyzing . . .
+        Success : 204 / 224
+        Error Correcting and Extracting Datas from DNA Strands
+        Completed
+        Total Data part Number : 224
+        Error DNA part Number : 44
+        Fatal Error DNA part Number : 0
+        Missing DNA part Number : 1
+
+File 5/15       Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep3_Amp1_Err5.dna
+        Separating DNA Strands . . .
+        Number of DNA Strands : 224
+        Classifying . . .
+        Analyzing . . .
+        Success : 172 / 224
+        Error Correcting and Extracting Datas from DNA Strands
+        Completed
+        Total Data part Number : 224
+        Error DNA part Number : 67
+        Fatal Error DNA part Number : 0
+        Missing DNA part Number : 12
+
+File 6/15       Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep3_Amp2_Err1.dna
+        Separating DNA Strands . . .
+        Number of DNA Strands : 896
+        Classifying . . .
+        Analyzing . . .
+        Success : 882 / 896
+        Error Correcting and Extracting Datas from DNA Strands
+        Completed
+        Total Data part Number : 224
+        Error DNA part Number : 0
+        Fatal Error DNA part Number : 0
+        Missing DNA part Number : 0
+
+File 7/15       Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep3_Amp2_Err2.dna
+        Separating DNA Strands . . .
+        Number of DNA Strands : 896
+        Classifying . . .
+        Analyzing . . .
+        Success : 866 / 896
+        Error Correcting and Extracting Datas from DNA Strands
+        Completed
+        Total Data part Number : 224
+        Error DNA part Number : 0
+        Fatal Error DNA part Number : 0
+        Missing DNA part Number : 0
+
+File 8/15       Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep3_Amp2_Err3.dna
+        Separating DNA Strands . . .
+        Number of DNA Strands : 896
+        Classifying . . .
+        Analyzing . . .
+        Success : 834 / 896
+        Error Correcting and Extracting Datas from DNA Strands
+        Completed
+        Total Data part Number : 224
+        Error DNA part Number : 2
+        Fatal Error DNA part Number : 0
+        Missing DNA part Number : 0
+
+File 9/15       Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep3_Amp2_Err4.dna
+        Separating DNA Strands . . .
+        Number of DNA Strands : 896
+        Classifying . . .
+        Analyzing . . .
+        Success : 798 / 896
+        Error Correcting and Extracting Datas from DNA Strands
+        Completed
+        Total Data part Number : 224
+        Error DNA part Number : 1
+        Fatal Error DNA part Number : 0
+        Missing DNA part Number : 0
+
+File 10/15      Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep3_Amp2_Err5.dna
+        Separating DNA Strands . . .
+        Number of DNA Strands : 896
+        Classifying . . .
+        Analyzing . . .
+        Success : 715 / 896
+        Error Correcting and Extracting Datas from DNA Strands
+        Completed
+        Total Data part Number : 224
+        Error DNA part Number : 3
+        Fatal Error DNA part Number : 0
+        Missing DNA part Number : 0
+
+File 11/15      Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep3_Amp3_Err1.dna
+        Separating DNA Strands . . .
+        Number of DNA Strands : 3584
+        Classifying . . .
+        Analyzing . . .
+        Success : 3521 / 3584
+        Error Correcting and Extracting Datas from DNA Strands
+        Completed
+        Total Data part Number : 224
+        Error DNA part Number : 0
+        Fatal Error DNA part Number : 0
+        Missing DNA part Number : 0
+
+File 12/15      Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep3_Amp3_Err2.dna
+        Separating DNA Strands . . .
+        Number of DNA Strands : 3584
+        Classifying . . .
+        Analyzing . . .
+        Success : 3467 / 3584
+        Error Correcting and Extracting Datas from DNA Strands
+        Completed
+        Total Data part Number : 224
+        Error DNA part Number : 1
+        Fatal Error DNA part Number : 0
+        Missing DNA part Number : 0
+
+File 13/15      Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep3_Amp3_Err3.dna
+        Separating DNA Strands . . .
+        Number of DNA Strands : 3584
+        Classifying . . .
+        Analyzing . . .
+        Success : 3396 / 3584
+        Error Correcting and Extracting Datas from DNA Strands
+        Completed
+        Total Data part Number : 224
+        Error DNA part Number : 2
+        Fatal Error DNA part Number : 0
+        Missing DNA part Number : 0
+
+File 14/15      Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep3_Amp3_Err4.dna
+        Separating DNA Strands . . .
+        Number of DNA Strands : 3584
+        Classifying . . .
+        Analyzing . . .
+        Success : 3268 / 3584
+        Error Correcting and Extracting Datas from DNA Strands
+        Completed
+        Total Data part Number : 224
+        Error DNA part Number : 0
+        Fatal Error DNA part Number : 0
+        Missing DNA part Number : 0
+
+File 15/15      Path : D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DataSet/Type1_Rep3_Amp3_Err5.dna
+        Separating DNA Strands . . .
+        Number of DNA Strands : 3584
+        Classifying . . .
+        Analyzing . . .
+        Success : 3208 / 3584
+        Error Correcting and Extracting Datas from DNA Strands
+        Completed
+        Total Data part Number : 224
+        Error DNA part Number : 1
+        Fatal Error DNA part Number : 0
+        Missing DNA part Number : 0

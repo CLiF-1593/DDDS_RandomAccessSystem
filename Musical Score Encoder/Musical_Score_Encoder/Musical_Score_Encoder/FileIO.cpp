@@ -34,10 +34,10 @@ vector<wstring> FileIO::GetFileNames(FileType type) {
 		ofn.lpstrFilter = L"MusicXML File\0*.xml;*.musicxml\0";
 		break;
 	case MusicDNA:
-		ofn.lpstrFilter = L"MusicDNA File\0*.dna;*.txt;*.musicdna\0";
+		ofn.lpstrFilter = L"MusicDNA File\0*.musicdna\0";
 		break;
 	case TEMPLATE:
-		ofn.lpstrFilter = L"Template File\0*.template;*.xml;*.musicxml\0";
+		ofn.lpstrFilter = L"Template File\0*.template\0";
 		break;
 	}
 	ofn.Flags = OFN_EXPLORER | OFN_PATHMUSTEXIST | OFN_FILEMUSTEXIST | OFN_NOCHANGEDIR | OFN_ALLOWMULTISELECT;
@@ -99,6 +99,9 @@ std::vector<tinyxml2::XMLNode*> FileXML::GetNoteXML(tinyxml2::XMLDocument** root
 	for (XMLNode* iter = node; iter; iter = iter->NextSiblingElement("measure")) {
 		for (XMLNode* note = iter->FirstChildElement("note"); note; note = note->NextSiblingElement("note")) {
 			vec.push_back(note);
+		}
+		if (iter->FirstChildElement("backup") == nullptr) {
+			vec.push_back(nullptr);
 		}
 	}
 	return vec;

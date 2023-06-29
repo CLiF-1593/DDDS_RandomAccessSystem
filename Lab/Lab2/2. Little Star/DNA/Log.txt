@@ -1,0 +1,36 @@
+[ DNA Encoder ]
+
+> DNA Generation System
+  ㄴDNA Digital Data Storage System Using Methylation and Restriction Modification System
+
+> 2023 KSA R&E
+
+
+계속하려면 아무 키나 누르십시오 . . .
+> Select the Files
+Repetition : 2.5
+[DNA Strand Generating]
+File 1/2
+        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\Little Star\MusicDNA/LittleStar_High.musicdna
+        Partition Size : 12nt (3byte)
+        Partitioning . . .
+        Generating DNA Strands . . .
+        DNA Number : 148
+        Repetition : 2.50847
+        Generated
+        Number of DNA Strands : 148
+
+File 2/2
+        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\Little Star\MusicDNA/LittleStar_Low.musicdna
+        Partition Size : 12nt (3byte)
+        Partitioning . . .
+        Generating DNA Strands . . .
+        DNA Number : 85
+        Repetition : 2.5
+        Generated
+        Number of DNA Strands : 85
+
+[Save Data]
+File 1/2        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\Little Star\MusicDNA/LittleStar_High.musicdna.dna
+File 2/2        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\Little Star\MusicDNA/LittleStar_Low.musicdna.dna
+END
