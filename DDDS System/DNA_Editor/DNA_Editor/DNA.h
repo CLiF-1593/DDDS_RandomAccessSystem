@@ -77,6 +77,7 @@ private:
 
 	std::string result;
 
+	void SimpleCorrecting();
 	void SetEditDistance();
 	void SetCandidate();
 	void SetCorrectDNA();

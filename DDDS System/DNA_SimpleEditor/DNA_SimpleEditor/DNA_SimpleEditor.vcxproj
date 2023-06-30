@@ -73,6 +73,9 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IncludePath>D:\KSA\R&amp;E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor;D:\KSA\R&amp;E\DDDS_RandomAccessSystem\DDDS System\DNA_SimpleEditor\DNA_SimpleEditor;$(IncludePath)</IncludePath>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>D:\KSA\R&amp;E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor;D:\KSA\R&amp;E\DDDS_RandomAccessSystem\DDDS System\DNA_SimpleEditor\DNA_SimpleEditor;$(IncludePath)</IncludePath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>

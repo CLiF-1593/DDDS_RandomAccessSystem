@@ -10,7 +10,7 @@ D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\DNA_Editor\DNA.cpp(362
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(810,50): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(806,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,2,1,1,ezpwd::gfpoly<8,285>>::decode(const std::pair<uint32_t *,uint32_t *> &,const std::pair<uint32_t *,uint32_t *> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const'
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs(80): message : see reference to class template instantiation 'ezpwd::reed_solomon<uint8_t,8,2,1,1,ezpwd::gfpoly<8,285>>' being compiled
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\DNA_Editor\DNA.cpp(416,10): message : see reference to class template instantiation 'ezpwd::RS<255,253>' being compiled
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\DNA_Editor\DNA.cpp(407,11): message : see reference to class template instantiation 'ezpwd::RS<255,253>' being compiled
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(793,50): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(792,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,2,1,1,ezpwd::gfpoly<8,285>>::decode(const std::pair<uint32_t *,uint32_t *> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const'
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(781,50): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
@@ -130,8 +130,8 @@ D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(781,6): 
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(777,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,2,1,1,ezpwd::gfpoly<8,285>>::decode(const std::pair<uint16_t *,uint16_t *> &,const std::pair<uint16_t *,uint16_t *> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const'
   Main.cpp
   Generating code
-  733 of 2855 functions (25.7%) were compiled, the rest were copied from previous compilation.
-    2 functions were new in current compilation
-    55 functions had inline decision re-evaluated but remain unchanged
+  7 of 2859 functions ( 0.2%) were compiled, the rest were copied from previous compilation.
+    3 functions were new in current compilation
+    33 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   DNA_Editor.vcxproj -> D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\x64\Release\DNA_Editor.exe

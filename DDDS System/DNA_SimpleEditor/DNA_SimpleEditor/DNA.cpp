@@ -294,6 +294,20 @@ DNA Merge(int fix_number, DNA& base_dna, vector<InsCandidate>& ins_candidate) {
 // ================== DNA_Analyzer ==================
 // ==================================================
 
+void DNA_Analyzer::SimpleCorrecting() {
+	for (int i = 0; i < this->dna_set->size(); i++) {
+		DNA dna = this->dna_set->at(i);
+		if (dna.size() == DATA_SIZE + DATA_PARITY_SIZE) {
+			DataRS rs;
+			string str = dna.str();
+			int err = rs.decode(str);
+			if (!IsFailed(err)) {
+				this->result = str;
+				return;
+			}
+		}
+	}
+}
 
 void DNA_Analyzer::SetEditDistance() {
 	GetEditDistance(this->dna_set);
@@ -482,6 +496,11 @@ void DNA_Analyzer::InitDNA(DNA_Set *dna_set) {
 }
 
 void DNA_Analyzer::Analyze() {
+	this->result = "";
+	this->SimpleCorrecting();
+	if (!this->result.empty()) {
+		return;
+	}
 	/*for (int i = 0; i < this->dna_set->size(); i++) {
 		cout << this->dna_set->at(i).str() << endl;
 	}*/
