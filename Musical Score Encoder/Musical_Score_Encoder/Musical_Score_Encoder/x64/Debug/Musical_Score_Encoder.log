@@ -1,4 +1,0 @@
-﻿  ScoreNode.cpp
-D:\KSA\R&E\DDDS_RandomAccessSystem\Musical Score Encoder\Musical_Score_Encoder\Musical_Score_Encoder\ScoreNode.cpp(101,24): warning C4552: '/': result of expression not used
-D:\KSA\R&E\DDDS_RandomAccessSystem\Musical Score Encoder\Musical_Score_Encoder\Musical_Score_Encoder\ScoreNode.cpp(198,12): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-  Musical_Score_Encoder.vcxproj -> D:\KSA\R&E\DDDS_RandomAccessSystem\Musical Score Encoder\Musical_Score_Encoder\x64\Debug\Musical_Score_Encoder.exe

@@ -1,0 +1,214 @@
+[Origin]
+
+Geographic Coordinate System
+> latitude:  36.37215
+> longitude:  127.3604
+> altitude:  54.0
+
+Integer Coordinate System
+> latitude:  363721500
+> longitude:  1273604000
+> altitude:  54000
+
+integer_latitude_longitude_scale = 10 ** 7
+integer_altitude_scale = 10 ** 3
+
+
+[Coordinates]
+
+* Coordinate  0
+
+Relative Coordinate
+> x:  -2
+> y:  0
+> z:  10
+
+Manipulated Geographic Coordinate System
+> latitude:  36.37215
+> longitude:  127.36038884332604
+> altitude:  59.0
+
+Integer Coordinate System
+> latitude:  363721500
+> longitude:  1273603888
+> altitude:  59000
+
+
+* Coordinate  1
+
+Relative Coordinate
+> x:  3
+> y:  5
+> z:  7
+
+Manipulated Geographic Coordinate System
+> latitude:  36.372172457886776
+> longitude:  127.36041673501096
+> altitude:  57.5
+
+Integer Coordinate System
+> latitude:  363721724
+> longitude:  1273604167
+> altitude:  57500
+
+
+* Coordinate  2
+
+Relative Coordinate
+> x:  4
+> y:  -1
+> z:  8
+
+Manipulated Geographic Coordinate System
+> latitude:  36.37214550842264
+> longitude:  127.36042231334794
+> altitude:  58.0
+
+Integer Coordinate System
+> latitude:  363721455
+> longitude:  1273604223
+> altitude:  58000
+
+
+* Coordinate  3
+
+Relative Coordinate
+> x:  3
+> y:  3
+> z:  5
+
+Manipulated Geographic Coordinate System
+> latitude:  36.37216347473206
+> longitude:  127.36041673501096
+> altitude:  56.5
+
+Integer Coordinate System
+> latitude:  363721634
+> longitude:  1273604167
+> altitude:  56500
+
+
+* Coordinate  4
+
+Relative Coordinate
+> x:  -3
+> y:  5
+> z:  10
+
+Manipulated Geographic Coordinate System
+> latitude:  36.372172457886776
+> longitude:  127.36038326498904
+> altitude:  59.0
+
+Integer Coordinate System
+> latitude:  363721724
+> longitude:  1273603832
+> altitude:  59000
+
+
+* Coordinate  5
+
+Relative Coordinate
+> x:  5
+> y:  0
+> z:  4
+
+Manipulated Geographic Coordinate System
+> latitude:  36.37215
+> longitude:  127.36042789168492
+> altitude:  56.0
+
+Integer Coordinate System
+> latitude:  363721500
+> longitude:  1273604278
+> altitude:  56000
+
+
+* Coordinate  6
+
+Relative Coordinate
+> x:  2
+> y:  3
+> z:  9
+
+Manipulated Geographic Coordinate System
+> latitude:  36.37216347473206
+> longitude:  127.36041115667396
+> altitude:  58.5
+
+Integer Coordinate System
+> latitude:  363721634
+> longitude:  1273604111
+> altitude:  58500
+
+
+* Coordinate  7
+
+Relative Coordinate
+> x:  5
+> y:  2
+> z:  5
+
+Manipulated Geographic Coordinate System
+> latitude:  36.372158983154705
+> longitude:  127.36042789168492
+> altitude:  56.5
+
+Integer Coordinate System
+> latitude:  363721589
+> longitude:  1273604278
+> altitude:  56500
+
+
+* Coordinate  8
+
+Relative Coordinate
+> x:  0
+> y:  -5
+> z:  0
+
+Manipulated Geographic Coordinate System
+> latitude:  36.37212754211322
+> longitude:  127.3604
+> altitude:  54.0
+
+Integer Coordinate System
+> latitude:  363721275
+> longitude:  1273604000
+> altitude:  54000
+
+
+* Coordinate  9
+
+Relative Coordinate
+> x:  2
+> y:  4
+> z:  1
+
+Manipulated Geographic Coordinate System
+> latitude:  36.37216796630942
+> longitude:  127.36041115667396
+> altitude:  54.5
+
+Integer Coordinate System
+> latitude:  363721679
+> longitude:  1273604111
+> altitude:  54500
+
+
+* Coordinate  10
+
+Relative Coordinate
+> x:  5
+> y:  5
+> z:  9
+
+Manipulated Geographic Coordinate System
+> latitude:  36.372172457886776
+> longitude:  127.36042789168492
+> altitude:  58.5
+
+Integer Coordinate System
+> latitude:  363721724
+> longitude:  1273604278
+> altitude:  58500

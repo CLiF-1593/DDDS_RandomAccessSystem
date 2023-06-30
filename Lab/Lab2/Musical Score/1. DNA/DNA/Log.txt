@@ -1,0 +1,58 @@
+[ DNA Encoder ]
+
+> DNA Generation System
+  ㄴDNA Digital Data Storage System Using Methylation and Restriction Modification System
+
+> 2023 KSA R&E
+
+
+계속하려면 아무 키나 누르십시오 . . .
+> Select the Files
+Repetition : 2.5
+[DNA Strand Generating]
+File 1/4
+        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\1. DNA\MusicDNA/DNA_Bass_TAB.musicdna
+        Partition Size : 12nt (3byte)
+        Partitioning . . .
+        Generating DNA Strands . . .
+        DNA Number : 145
+        Repetition : 2.5
+        Generated
+        Number of DNA Strands : 145
+
+File 2/4
+        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\1. DNA\MusicDNA/DNA_Drum.musicdna
+        Partition Size : 12nt (3byte)
+        Partitioning . . .
+        Generating DNA Strands . . .
+        DNA Number : 216
+        Repetition : 2.50193
+        Generated
+        Number of DNA Strands : 216
+
+File 3/4
+        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\1. DNA\MusicDNA/DNA_Piano_High.musicdna
+        Partition Size : 12nt (3byte)
+        Partitioning . . .
+        Generating DNA Strands . . .
+        DNA Number : 210
+        Repetition : 2.5
+        Generated
+        Number of DNA Strands : 210
+
+File 4/4
+        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\1. DNA\MusicDNA/DNA_Piano_Low.musicdna
+        Partition Size : 12nt (3byte)
+        Partitioning . . .
+        Generating DNA Strands . . .
+        DNA Number : 250
+        Repetition : 2.50836
+        Generated
+        Number of DNA Strands : 250
+
+[Save Data]
+File 1/4        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\1. DNA\MusicDNA/DNA_Bass_TAB.musicdna.dna
+File 2/4        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\1. DNA\MusicDNA/DNA_Drum.musicdna.dna
+File 3/4        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\1. DNA\MusicDNA/DNA_Piano_High.musicdna.dna
+File 4/4        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\1. DNA\MusicDNA/DNA_Piano_Low.musicdna.dna
+END

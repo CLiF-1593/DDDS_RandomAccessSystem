@@ -30,8 +30,9 @@ int Decoder::Generate(std::vector<std::string> &path) {
 		cin >> encoding_type;
 
 		cout << "\tTable Type (0 : std) : ";
-		int table_type;
-		cin >> table_type;
+		int table_type = 0;
+		if(encoding_type != COORDINATE)
+			cin >> table_type;
 
 		cout << "\tSeparating DNA Strands . . ." << endl;
 		vector<DNA> dna_set;

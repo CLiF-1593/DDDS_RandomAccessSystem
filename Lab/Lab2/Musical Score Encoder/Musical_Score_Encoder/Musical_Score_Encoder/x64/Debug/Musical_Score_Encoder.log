@@ -1,0 +1,15 @@
+﻿  Decoder.cpp
+D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\Musical Score Encoder\Musical_Score_Encoder\Musical_Score_Encoder\Decoder.cpp(84,85): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  Encoder.cpp
+  FileIO.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\filesystem(13): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\Musical Score Encoder\Musical_Score_Encoder\Musical_Score_Encoder\FileIO.cpp(19,6): warning C4101: 'hdc': unreferenced local variable
+D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\Musical Score Encoder\Musical_Score_Encoder\Musical_Score_Encoder\FileIO.cpp(20,14): warning C4101: 'ps': unreferenced local variable
+  Generator.cpp
+  Main.cpp
+  ScoreNode.cpp
+D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\Musical Score Encoder\Musical_Score_Encoder\Musical_Score_Encoder\ScoreNode.cpp(101,24): warning C4552: '/': result of expression not used
+D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\Musical Score Encoder\Musical_Score_Encoder\Musical_Score_Encoder\ScoreNode.cpp(198,12): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  TinyXML.cpp
+  Generating Code...
+  Musical_Score_Encoder.vcxproj -> D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\Musical Score Encoder\Musical_Score_Encoder\x64\Debug\Musical_Score_Encoder.exe

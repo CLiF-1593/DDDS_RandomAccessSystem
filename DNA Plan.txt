@@ -11,15 +11,18 @@ Total : 44
 [Lab 2]
 
 Case 1 (DNA, Rep 2.5)
-: 173 (Bass), 204 (Drum), 237 (Piano High), 277 (Piano Low) = 891
+: 145 (Bass), 216 (Drum), 210 (Piano High), 250 (Piano Low) = 821
 
-Case 2 (Little Star, Rep 2.5)
-: 148 (Piano High), 85 (Piano Low) = 233
+Case 2 (Little Star, Rep 4.0)
+: 194 (Piano High), 96 (Piano Low) = 290
 
 Case 3 (The Lark, Rep 3.0)
-: 181 (1st Violin), 192 (2nd Violin), 210 (Viola), 208 (Cello) = 791
+: 153 (1st Violin), 171 (2nd Violin), 161 (Viola), 142 (Cello) = 627
 
-Total : 1915
+Case 4 (The Trout, Rep 3.0)
+: 44 (Violin), 47 (Viola), 45 (Cello), 35 (Double Bass) = 171
+
+Total : 1909
 
 
 [Lab 3]
@@ -32,4 +35,4 @@ Total :
 
 [Total]
 
-44 + 1915 = 1959
+44 + 1909 = 1953
