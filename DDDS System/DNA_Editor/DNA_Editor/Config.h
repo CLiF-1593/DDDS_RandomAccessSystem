@@ -2,7 +2,7 @@
 #include <vector>
 #include <iostream>
 
-#define IsEncoder true
+#define IsEncoder false
 
 #define ByteToBPS(x) (unsigned char)(x * 4)
 #define BPSToByte(x) (unsigned char)(x * 0.25)

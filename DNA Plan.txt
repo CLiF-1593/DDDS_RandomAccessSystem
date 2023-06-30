@@ -1,4 +1,4 @@
-<DNA Plan (Numbers)>
+<DNA Plan>
 
 [Lab 1]
 
@@ -31,6 +31,9 @@ File Number : 11
 DNA Number : 11
 Repetition : 4
 Total : 44
+
+
+[Additional]
 
 
 [Total]

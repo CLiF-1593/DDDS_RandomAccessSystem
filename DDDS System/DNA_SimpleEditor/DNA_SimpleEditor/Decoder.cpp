@@ -31,7 +31,7 @@ int Decoder::Generate(std::vector<std::string> &path) {
 
 		cout << "\tTable Type (0 : std) : ";
 		int table_type = 0;
-		if(encoding_type != COORDINATE)
+		if(encoding_type != COORDINATE && encoding_type != ASCII)
 			cin >> table_type;
 
 		cout << "\tSeparating DNA Strands . . ." << endl;
@@ -82,7 +82,7 @@ int Decoder::Generate(std::vector<std::string> &path) {
 		if (err_cnt) cout << "\tError Occured" << endl;
 		else if (fatal_err_cnt) cout << "\tFatal Error Occured" << endl;
 		else if (missing_cnt) cout << "\tMissing" << endl;
-		else cout << "\tSuccess" << endl;
+		else cout << "\tSuccess" << endl << endl;
 
 		data = Decoding(static_cast<EncodingType>(encoding_type), table_type, data);
 

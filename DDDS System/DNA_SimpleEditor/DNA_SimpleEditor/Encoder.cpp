@@ -33,8 +33,8 @@ int Encoder::Generate(std::vector<std::string> &path) {
 		cin >> encoding_type;
 
 		string dna_dat = Encoding(static_cast<EncodingType>(encoding_type), dat);
-		while (dna_dat.size() < 12) dna_dat.push_back(0);
-		dna_dat.resize(12);
+		while (dna_dat.size() < BPSToByte(DATA_SIZE)) dna_dat.push_back(0);
+		dna_dat.resize(BPSToByte(DATA_SIZE));
 
 		DataRS rs;
 		string parity;

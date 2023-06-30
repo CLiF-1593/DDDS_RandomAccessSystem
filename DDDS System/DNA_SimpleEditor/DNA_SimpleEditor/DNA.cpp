@@ -487,13 +487,13 @@ void DNA_Analyzer::Analyze() {
 	}*/
 	//cout << "\t\tSet Edit Distance . . ." << endl;
 	this->SetEditDistance();
-	cout << endl;
+	/*cout << endl;
 	for (int i = 0; i < this->dna_set->size(); i++) {
 		cout << this->dna_set->at(i).str() << endl;
-	}
+	}*/
 	//cout << "\t\tSet Candidate . . ." << endl;
 	this->SetCandidate();
-	cout << "CN : " << this->ins_candidate.size() << " / ";
+	//cout << "CN : " << this->ins_candidate.size() << " / ";
 	//cout << "\t\tCorrecting DNA . . ." << endl;
 	/*for (int i = 0; i < this->dna_set->size(); i++) {
 		cout << "\t\t\t" << this->dna_set->at(i).str() << endl;
