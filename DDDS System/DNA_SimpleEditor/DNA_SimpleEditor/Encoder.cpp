@@ -28,7 +28,8 @@ int Encoder::Generate(std::vector<std::string> &path) {
 		cout << "\t\t0 : Standard Encoding (ASCII)" << endl;
 		cout << "\t\t1 : English Custom Table Encoding" << endl;
 		cout << "\t\t2 : All Language Custom Table Encoding" << endl;
-		cout << "\t\t3 : Coordinate (Integer)" << endl << "\t\t";
+		cout << "\t\t3 : Coordinate (Integer)" << endl;
+		cout << "\t\t4 : Encoding Table Based on Base 64 Decoding" << endl << "\t\t";
 		int encoding_type;
 		cin >> encoding_type;
 

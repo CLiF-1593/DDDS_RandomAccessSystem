@@ -1,4 +1,4 @@
-<DNA Plan>
+<DNA Count>
 
 [Lab 1]
 
@@ -35,9 +35,14 @@ Total : 44
 
 [Additional]
 
+File Number : 3
+DNA Number : 3
+Repetition : 1
+Total : 3
+
 
 [Total]
 
-44 + 1909 + 44 = 1997
+44 + 1909 + 44 + 3 = 2000
 
-Redundancy : 3
+Redundancy : 0

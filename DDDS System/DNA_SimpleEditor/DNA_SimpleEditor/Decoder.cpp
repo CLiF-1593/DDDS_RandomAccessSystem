@@ -25,13 +25,14 @@ int Decoder::Generate(std::vector<std::string> &path) {
 		cout << "\t\t0 : Standard Encoding (ASCII)" << endl;
 		cout << "\t\t1 : English Custom Table Encoding" << endl;
 		cout << "\t\t2 : All Language Custom Table Encoding" << endl;
-		cout << "\t\t3 : Coordinate (Integer)" << endl << "\t\t";
+		cout << "\t\t3 : Coordinate (Integer)" << endl;
+		cout << "\t\t4 : Encoding Table Based on Base 64 Decoding" << endl << "\t\t";
 		int encoding_type;
 		cin >> encoding_type;
 
 		cout << "\tTable Type (0 : std) : ";
 		int table_type = 0;
-		if(encoding_type != COORDINATE && encoding_type != ASCII)
+		if(encoding_type != COORDINATE && encoding_type != ASCII && encoding_type != BASE64)
 			cin >> table_type;
 
 		cout << "\tSeparating DNA Strands . . ." << endl;
