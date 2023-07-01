@@ -2,6 +2,6 @@
 * text=auto
 
 *.sh linguist-detectable=false
-*.mscz linguist-detectable=true
-*.xml linguist-detectable=true
-*.musicxml linguist-detectable=true
+*.mscz linguist-detectable=false
+*.xml linguist-detectable=false
+*.musicxml linguist-detectable=false
