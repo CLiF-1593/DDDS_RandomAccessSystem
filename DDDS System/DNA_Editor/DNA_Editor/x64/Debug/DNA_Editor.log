@@ -1,16 +1,16 @@
 ﻿  DNA.cpp
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\DNA_Editor\DNA.cpp(28,40): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\DNA_Editor\DNA.cpp(30,23): warning C4267: '-=': conversion from 'size_t' to 'int', possible loss of data
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\DNA_Editor\DNA.cpp(40,3): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\DNA_Editor\DNA.cpp(187,68): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\DNA_Editor\DNA.cpp(207,36): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\DNA_Editor\DNA.cpp(232,46): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\DNA_Editor\DNA.cpp(233,46): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\DNA_Editor\DNA.cpp(351,38): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\DNA_Editor\DNA.cpp(29,40): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\DNA_Editor\DNA.cpp(31,23): warning C4267: '-=': conversion from 'size_t' to 'int', possible loss of data
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\DNA_Editor\DNA.cpp(41,3): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\DNA_Editor\DNA.cpp(188,68): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\DNA_Editor\DNA.cpp(212,36): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\DNA_Editor\DNA.cpp(237,46): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\DNA_Editor\DNA.cpp(238,46): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\DNA_Editor\DNA.cpp(362,38): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(810,50): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(806,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,2,1,1,ezpwd::gfpoly<8,285>>::decode(const std::pair<uint32_t *,uint32_t *> &,const std::pair<uint32_t *,uint32_t *> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const'
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs(80): message : see reference to class template instantiation 'ezpwd::reed_solomon<uint8_t,8,2,1,1,ezpwd::gfpoly<8,285>>' being compiled
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\DNA_Editor\DNA.cpp(405,10): message : see reference to class template instantiation 'ezpwd::RS<255,253>' being compiled
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\DNA_Editor\DNA.cpp(407,11): message : see reference to class template instantiation 'ezpwd::RS<255,253>' being compiled
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(793,50): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(792,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,2,1,1,ezpwd::gfpoly<8,285>>::decode(const std::pair<uint32_t *,uint32_t *> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const'
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(781,50): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data

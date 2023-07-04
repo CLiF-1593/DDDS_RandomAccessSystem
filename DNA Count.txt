@@ -1,0 +1,42 @@
+<DNA Count>
+
+[Lab 1]
+
+File Number : 11
+DNA Number : 11
+
+
+[Lab 2]
+
+Case 1 (DNA, Rep 1.25)
+: 73 (Bass), 108 (Drum), 105 (Piano High), 125 (Piano Low) = 411
+
+Case 2 (Little Star, Rep 1.75)
+: 85 (Piano High), 42 (Piano Low) = 127
+
+Case 3 (The Lark, Rep 1.5)
+: 77 (1st Violin), 86 (2nd Violin), 85 (Viola), 71 (Cello) = 319
+
+Case 4 (The Trout, Rep 2.0)
+: 32 (Violin), 30 (Viola), 30 (Cello), 24 (Double Bass) = 116
+
+Total : 973
+
+
+[Lab 3]
+
+File Number : 11
+DNA Number : 11
+
+
+[Additional]
+
+File Number : 3
+DNA Number : 3
+
+
+[Total]
+
+11 + 973 + 11 + 3 = 998
+
+Redundancy : 0

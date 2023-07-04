@@ -1,0 +1,58 @@
+[ DNA Encoder ]
+
+> DNA Generation System
+  ㄴDNA Digital Data Storage System Using Methylation and Restriction Modification System
+
+> 2023 KSA R&E
+
+
+계속하려면 아무 키나 누르십시오 . . .
+> Select the Files
+Repetition : 1.25
+[DNA Strand Generating]
+File 1/4
+        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\Musical Score\1. DNA\MusicDNA/DNA_Bass_TAB.musicdna
+        Partition Size : 12nt (3byte)
+        Partitioning . . .
+        Generating DNA Strands . . .
+        DNA Number : 73
+        Repetition : 1.25862
+        Generated
+        Number of DNA Strands : 73
+
+File 2/4
+        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\Musical Score\1. DNA\MusicDNA/DNA_Drum.musicdna
+        Partition Size : 12nt (3byte)
+        Partitioning . . .
+        Generating DNA Strands . . .
+        DNA Number : 108
+        Repetition : 1.25097
+        Generated
+        Number of DNA Strands : 108
+
+File 3/4
+        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\Musical Score\1. DNA\MusicDNA/DNA_Piano_High.musicdna
+        Partition Size : 12nt (3byte)
+        Partitioning . . .
+        Generating DNA Strands . . .
+        DNA Number : 105
+        Repetition : 1.25
+        Generated
+        Number of DNA Strands : 105
+
+File 4/4
+        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\Musical Score\1. DNA\MusicDNA/DNA_Piano_Low.musicdna
+        Partition Size : 12nt (3byte)
+        Partitioning . . .
+        Generating DNA Strands . . .
+        DNA Number : 125
+        Repetition : 1.25418
+        Generated
+        Number of DNA Strands : 125
+
+[Save Data]
+File 1/4        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\Musical Score\1. DNA\MusicDNA/DNA_Bass_TAB.musicdna.dna
+File 2/4        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\Musical Score\1. DNA\MusicDNA/DNA_Drum.musicdna.dna
+File 3/4        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\Musical Score\1. DNA\MusicDNA/DNA_Piano_High.musicdna.dna
+File 4/4        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\Musical Score\1. DNA\MusicDNA/DNA_Piano_Low.musicdna.dna
+END

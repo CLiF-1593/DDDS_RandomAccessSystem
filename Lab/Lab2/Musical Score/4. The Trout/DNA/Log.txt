@@ -1,0 +1,58 @@
+[ DNA Encoder ]
+
+> DNA Generation System
+  ㄴDNA Digital Data Storage System Using Methylation and Restriction Modification System
+
+> 2023 KSA R&E
+
+
+계속하려면 아무 키나 누르십시오 . . .
+> Select the Files
+Repetition : 2.0
+[DNA Strand Generating]
+File 1/4
+        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\Musical Score\4. The Trout\MusicDNA/TheTrout_Cello.musicdna
+        Partition Size : 12nt (3byte)
+        Partitioning . . .
+        Generating DNA Strands . . .
+        DNA Number : 30
+        Repetition : 2
+        Generated
+        Number of DNA Strands : 30
+
+File 2/4
+        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\Musical Score\4. The Trout\MusicDNA/TheTrout_DoubleBass.musicdna
+        Partition Size : 12nt (3byte)
+        Partitioning . . .
+        Generating DNA Strands . . .
+        DNA Number : 24
+        Repetition : 2.05714
+        Generated
+        Number of DNA Strands : 24
+
+File 3/4
+        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\Musical Score\4. The Trout\MusicDNA/TheTrout_Viola.musicdna
+        Partition Size : 12nt (3byte)
+        Partitioning . . .
+        Generating DNA Strands . . .
+        DNA Number : 30
+        Repetition : 2.04545
+        Generated
+        Number of DNA Strands : 30
+
+File 4/4
+        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\Musical Score\4. The Trout\MusicDNA/TheTrout_Violin.musicdna
+        Partition Size : 12nt (3byte)
+        Partitioning . . .
+        Generating DNA Strands . . .
+        DNA Number : 32
+        Repetition : 2.04255
+        Generated
+        Number of DNA Strands : 32
+
+[Save Data]
+File 1/4        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\Musical Score\4. The Trout\MusicDNA/TheTrout_Cello.musicdna.dna
+File 2/4        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\Musical Score\4. The Trout\MusicDNA/TheTrout_DoubleBass.musicdna.dna
+File 3/4        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\Musical Score\4. The Trout\MusicDNA/TheTrout_Viola.musicdna.dna
+File 4/4        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\Musical Score\4. The Trout\MusicDNA/TheTrout_Violin.musicdna.dna
+END

@@ -8,51 +8,51 @@
 
 계속하려면 아무 키나 누르십시오 . . .
 > Select the Files
-Repetition : 3.0
+Repetition : 1.5
 [DNA Strand Generating]
 File 1/4
-        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\3. Lark\MusicDNA/TheLark_Cello.musicdna
+        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\Musical Score\3. The Lark\MusicDNA/TheLark_Cello.musicdna
         Partition Size : 12nt (3byte)
         Partitioning . . .
         Generating DNA Strands . . .
-        DNA Number : 142
-        Repetition : 3
+        DNA Number : 71
+        Repetition : 1.5
         Generated
-        Number of DNA Strands : 142
+        Number of DNA Strands : 71
 
 File 2/4
-        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\3. Lark\MusicDNA/TheLark_FirstViolin.musicdna
+        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\Musical Score\3. The Lark\MusicDNA/TheLark_FirstViolin.musicdna
         Partition Size : 12nt (3byte)
         Partitioning . . .
         Generating DNA Strands . . .
-        DNA Number : 153
-        Repetition : 3
+        DNA Number : 77
+        Repetition : 1.5098
         Generated
-        Number of DNA Strands : 153
+        Number of DNA Strands : 77
 
 File 3/4
-        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\3. Lark\MusicDNA/TheLark_SecondViolin.musicdna
+        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\Musical Score\3. The Lark\MusicDNA/TheLark_SecondViolin.musicdna
         Partition Size : 12nt (3byte)
         Partitioning . . .
         Generating DNA Strands . . .
-        DNA Number : 171
-        Repetition : 3
+        DNA Number : 86
+        Repetition : 1.50877
         Generated
-        Number of DNA Strands : 171
+        Number of DNA Strands : 86
 
 File 4/4
-        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\3. Lark\MusicDNA/TheLark_Viola.musicdna
+        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\Musical Score\3. The Lark\MusicDNA/TheLark_Viola.musicdna
         Partition Size : 12nt (3byte)
         Partitioning . . .
         Generating DNA Strands . . .
-        DNA Number : 169
-        Repetition : 3
+        DNA Number : 85
+        Repetition : 1.50888
         Generated
-        Number of DNA Strands : 169
+        Number of DNA Strands : 85
 
 [Save Data]
-File 1/4        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\3. Lark\MusicDNA/TheLark_Cello.musicdna.dna
-File 2/4        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\3. Lark\MusicDNA/TheLark_FirstViolin.musicdna.dna
-File 3/4        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\3. Lark\MusicDNA/TheLark_SecondViolin.musicdna.dna
-File 4/4        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\3. Lark\MusicDNA/TheLark_Viola.musicdna.dna
+File 1/4        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\Musical Score\3. The Lark\MusicDNA/TheLark_Cello.musicdna.dna
+File 2/4        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\Musical Score\3. The Lark\MusicDNA/TheLark_FirstViolin.musicdna.dna
+File 3/4        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\Musical Score\3. The Lark\MusicDNA/TheLark_SecondViolin.musicdna.dna
+File 4/4        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\Musical Score\3. The Lark\MusicDNA/TheLark_Viola.musicdna.dna
 END

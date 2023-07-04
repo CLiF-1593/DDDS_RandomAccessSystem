@@ -6,13 +6,13 @@
 
 //Standard Encoding
 
-/*
-#define DATA_SIZE 12
-#define DATA_PARITY_SIZE 8
-*/
 
-#define DATA_SIZE 48
-#define DATA_PARITY_SIZE 20
+#define DATA_SIZE 8
+#define DATA_PARITY_SIZE 4
+
+
+//#define DATA_SIZE 48
+//#define DATA_PARITY_SIZE 20
 
 #define CANDIDATE_RATIO 0.3
 #define MAXIMUM_CALCULATING_TIME 15000

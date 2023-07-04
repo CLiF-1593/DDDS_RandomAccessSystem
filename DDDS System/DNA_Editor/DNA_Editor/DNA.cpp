@@ -405,7 +405,7 @@ void DNA_Analyzer::SimpleCorrecting() {
 		DNA dna = this->dna_set->at(i);
 		if (dna.size() == DATA_SIZE + DATA_PARITY_SIZE) {
 			DataRS rs;
-			string str = dna.str();
+			string str = dna.to_binary();
 			int err = rs.decode(str);
 			if (!IsFailed(err)) {
 				this->result = str;

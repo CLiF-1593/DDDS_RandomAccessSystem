@@ -7,43 +7,43 @@ D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_SimpleEditor\DNA_SimpleEditor
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_SimpleEditor\DNA_SimpleEditor\DNA.cpp(237,46): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_SimpleEditor\DNA_SimpleEditor\DNA.cpp(238,46): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(810,50): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(806,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,5,1,1,ezpwd::gfpoly<8,285>>::decode(const std::pair<uint32_t *,uint32_t *> &,const std::pair<uint32_t *,uint32_t *> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const'
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs(80): message : see reference to class template instantiation 'ezpwd::reed_solomon<uint8_t,8,5,1,1,ezpwd::gfpoly<8,285>>' being compiled
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_SimpleEditor\DNA_SimpleEditor\DNA.cpp(301,11): message : see reference to class template instantiation 'ezpwd::RS<255,250>' being compiled
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(806,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,1,1,1,ezpwd::gfpoly<8,285>>::decode(const std::pair<uint32_t *,uint32_t *> &,const std::pair<uint32_t *,uint32_t *> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const'
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs(80): message : see reference to class template instantiation 'ezpwd::reed_solomon<uint8_t,8,1,1,1,ezpwd::gfpoly<8,285>>' being compiled
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_SimpleEditor\DNA_SimpleEditor\DNA.cpp(301,11): message : see reference to class template instantiation 'ezpwd::RS<255,254>' being compiled
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(793,50): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(792,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,5,1,1,ezpwd::gfpoly<8,285>>::decode(const std::pair<uint32_t *,uint32_t *> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const'
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(792,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,1,1,1,ezpwd::gfpoly<8,285>>::decode(const std::pair<uint32_t *,uint32_t *> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const'
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(781,50): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(777,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,5,1,1,ezpwd::gfpoly<8,285>>::decode(const std::pair<uint16_t *,uint16_t *> &,const std::pair<uint16_t *,uint16_t *> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const'
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(777,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,1,1,1,ezpwd::gfpoly<8,285>>::decode(const std::pair<uint16_t *,uint16_t *> &,const std::pair<uint16_t *,uint16_t *> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const'
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(764,50): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(763,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,5,1,1,ezpwd::gfpoly<8,285>>::decode(const std::pair<uint16_t *,uint16_t *> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const'
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(763,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,1,1,1,ezpwd::gfpoly<8,285>>::decode(const std::pair<uint16_t *,uint16_t *> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const'
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(752,50): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(748,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,5,1,1,ezpwd::gfpoly<8,285>>::decode(const std::pair<uint8_t *,uint8_t *> &,const std::pair<uint8_t *,uint8_t *> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const'
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(748,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,1,1,1,ezpwd::gfpoly<8,285>>::decode(const std::pair<uint8_t *,uint8_t *> &,const std::pair<uint8_t *,uint8_t *> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const'
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(735,50): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(734,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,5,1,1,ezpwd::gfpoly<8,285>>::decode(const std::pair<uint8_t *,uint8_t *> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const'
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(734,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,1,1,1,ezpwd::gfpoly<8,285>>::decode(const std::pair<uint8_t *,uint8_t *> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const'
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(678,50): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(674,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,5,1,1,ezpwd::gfpoly<8,285>>::encode(const std::pair<const uint32_t *,const uint32_t *> &,const std::pair<uint32_t *,uint32_t *> &) const'
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(674,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,1,1,1,ezpwd::gfpoly<8,285>>::encode(const std::pair<const uint32_t *,const uint32_t *> &,const std::pair<uint32_t *,uint32_t *> &) const'
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(665,63): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(664,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,5,1,1,ezpwd::gfpoly<8,285>>::encode(const std::pair<uint32_t *,uint32_t *> &) const'
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(664,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,1,1,1,ezpwd::gfpoly<8,285>>::encode(const std::pair<uint32_t *,uint32_t *> &) const'
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(657,50): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(653,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,5,1,1,ezpwd::gfpoly<8,285>>::encode(const std::pair<const uint16_t *,const uint16_t *> &,const std::pair<uint16_t *,uint16_t *> &) const'
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(653,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,1,1,1,ezpwd::gfpoly<8,285>>::encode(const std::pair<const uint16_t *,const uint16_t *> &,const std::pair<uint16_t *,uint16_t *> &) const'
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(644,63): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(643,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,5,1,1,ezpwd::gfpoly<8,285>>::encode(const std::pair<uint16_t *,uint16_t *> &) const'
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(643,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,1,1,1,ezpwd::gfpoly<8,285>>::encode(const std::pair<uint16_t *,uint16_t *> &) const'
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(636,50): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(632,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,5,1,1,ezpwd::gfpoly<8,285>>::encode(const std::pair<const uint8_t *,const uint8_t *> &,const std::pair<uint8_t *,uint8_t *> &) const'
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(632,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,1,1,1,ezpwd::gfpoly<8,285>>::encode(const std::pair<const uint8_t *,const uint8_t *> &,const std::pair<uint8_t *,uint8_t *> &) const'
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(623,63): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(622,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,5,1,1,ezpwd::gfpoly<8,285>>::encode(const std::pair<uint8_t *,uint8_t *> &) const'
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(622,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,1,1,1,ezpwd::gfpoly<8,285>>::encode(const std::pair<uint8_t *,uint8_t *> &) const'
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(886,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(811,1): message : see reference to function template instantiation 'int ezpwd::reed_solomon<uint8_t,8,5,1,1,ezpwd::gfpoly<8,285>>::decode_mask<uint32_t>(INP *,int,INP *,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const' being compiled
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(811,1): message : see reference to function template instantiation 'int ezpwd::reed_solomon<uint8_t,8,1,1,1,ezpwd::gfpoly<8,285>>::decode_mask<uint32_t>(INP *,int,INP *,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const' being compiled
           with
           [
               INP=uint32_t
           ]
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(810,6): message : see reference to function template instantiation 'int ezpwd::reed_solomon<uint8_t,8,5,1,1,ezpwd::gfpoly<8,285>>::decode_mask<uint32_t>(INP *,int,INP *,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const' being compiled
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(810,6): message : see reference to function template instantiation 'int ezpwd::reed_solomon<uint8_t,8,1,1,1,ezpwd::gfpoly<8,285>>::decode_mask<uint32_t>(INP *,int,INP *,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const' being compiled
           with
           [
               INP=uint32_t
           ]
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(806,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,5,1,1,ezpwd::gfpoly<8,285>>::decode(const std::pair<uint32_t *,uint32_t *> &,const std::pair<uint32_t *,uint32_t *> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const'
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(806,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,1,1,1,ezpwd::gfpoly<8,285>>::decode(const std::pair<uint32_t *,uint32_t *> &,const std::pair<uint32_t *,uint32_t *> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const'
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(862,32): warning C4244: '=': conversion from 'INP' to '_Ty', possible loss of data
           with
           [
@@ -53,57 +53,57 @@ D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(862,32):
           [
               _Ty=uint8_t
           ]
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(782,1): message : see reference to function template instantiation 'int ezpwd::reed_solomon<uint8_t,8,5,1,1,ezpwd::gfpoly<8,285>>::decode_mask<uint16_t>(INP *,int,INP *,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const' being compiled
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(782,1): message : see reference to function template instantiation 'int ezpwd::reed_solomon<uint8_t,8,1,1,1,ezpwd::gfpoly<8,285>>::decode_mask<uint16_t>(INP *,int,INP *,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const' being compiled
           with
           [
               INP=uint16_t
           ]
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(781,6): message : see reference to function template instantiation 'int ezpwd::reed_solomon<uint8_t,8,5,1,1,ezpwd::gfpoly<8,285>>::decode_mask<uint16_t>(INP *,int,INP *,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const' being compiled
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(781,6): message : see reference to function template instantiation 'int ezpwd::reed_solomon<uint8_t,8,1,1,1,ezpwd::gfpoly<8,285>>::decode_mask<uint16_t>(INP *,int,INP *,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const' being compiled
           with
           [
               INP=uint16_t
           ]
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(777,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,5,1,1,ezpwd::gfpoly<8,285>>::decode(const std::pair<uint16_t *,uint16_t *> &,const std::pair<uint16_t *,uint16_t *> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const'
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(777,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,1,1,1,ezpwd::gfpoly<8,285>>::decode(const std::pair<uint16_t *,uint16_t *> &,const std::pair<uint16_t *,uint16_t *> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const'
   Decoder.cpp
   Encoder.cpp
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(810,50): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(806,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,5,1,1,ezpwd::gfpoly<8,285>>::decode(const std::pair<uint32_t *,uint32_t *> &,const std::pair<uint32_t *,uint32_t *> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const'
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs(80): message : see reference to class template instantiation 'ezpwd::reed_solomon<uint8_t,8,5,1,1,ezpwd::gfpoly<8,285>>' being compiled
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_SimpleEditor\DNA_SimpleEditor\Encoder.cpp(40,10): message : see reference to class template instantiation 'ezpwd::RS<255,250>' being compiled
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(806,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,1,1,1,ezpwd::gfpoly<8,285>>::decode(const std::pair<uint32_t *,uint32_t *> &,const std::pair<uint32_t *,uint32_t *> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const'
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs(80): message : see reference to class template instantiation 'ezpwd::reed_solomon<uint8_t,8,1,1,1,ezpwd::gfpoly<8,285>>' being compiled
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_SimpleEditor\DNA_SimpleEditor\Encoder.cpp(40,10): message : see reference to class template instantiation 'ezpwd::RS<255,254>' being compiled
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(793,50): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(792,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,5,1,1,ezpwd::gfpoly<8,285>>::decode(const std::pair<uint32_t *,uint32_t *> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const'
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(792,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,1,1,1,ezpwd::gfpoly<8,285>>::decode(const std::pair<uint32_t *,uint32_t *> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const'
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(781,50): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(777,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,5,1,1,ezpwd::gfpoly<8,285>>::decode(const std::pair<uint16_t *,uint16_t *> &,const std::pair<uint16_t *,uint16_t *> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const'
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(777,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,1,1,1,ezpwd::gfpoly<8,285>>::decode(const std::pair<uint16_t *,uint16_t *> &,const std::pair<uint16_t *,uint16_t *> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const'
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(764,50): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(763,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,5,1,1,ezpwd::gfpoly<8,285>>::decode(const std::pair<uint16_t *,uint16_t *> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const'
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(763,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,1,1,1,ezpwd::gfpoly<8,285>>::decode(const std::pair<uint16_t *,uint16_t *> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const'
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(752,50): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(748,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,5,1,1,ezpwd::gfpoly<8,285>>::decode(const std::pair<uint8_t *,uint8_t *> &,const std::pair<uint8_t *,uint8_t *> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const'
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(748,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,1,1,1,ezpwd::gfpoly<8,285>>::decode(const std::pair<uint8_t *,uint8_t *> &,const std::pair<uint8_t *,uint8_t *> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const'
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(735,50): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(734,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,5,1,1,ezpwd::gfpoly<8,285>>::decode(const std::pair<uint8_t *,uint8_t *> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const'
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(734,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,1,1,1,ezpwd::gfpoly<8,285>>::decode(const std::pair<uint8_t *,uint8_t *> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const'
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(678,50): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(674,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,5,1,1,ezpwd::gfpoly<8,285>>::encode(const std::pair<const uint32_t *,const uint32_t *> &,const std::pair<uint32_t *,uint32_t *> &) const'
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(674,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,1,1,1,ezpwd::gfpoly<8,285>>::encode(const std::pair<const uint32_t *,const uint32_t *> &,const std::pair<uint32_t *,uint32_t *> &) const'
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(665,63): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(664,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,5,1,1,ezpwd::gfpoly<8,285>>::encode(const std::pair<uint32_t *,uint32_t *> &) const'
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(664,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,1,1,1,ezpwd::gfpoly<8,285>>::encode(const std::pair<uint32_t *,uint32_t *> &) const'
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(657,50): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(653,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,5,1,1,ezpwd::gfpoly<8,285>>::encode(const std::pair<const uint16_t *,const uint16_t *> &,const std::pair<uint16_t *,uint16_t *> &) const'
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(653,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,1,1,1,ezpwd::gfpoly<8,285>>::encode(const std::pair<const uint16_t *,const uint16_t *> &,const std::pair<uint16_t *,uint16_t *> &) const'
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(644,63): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(643,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,5,1,1,ezpwd::gfpoly<8,285>>::encode(const std::pair<uint16_t *,uint16_t *> &) const'
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(643,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,1,1,1,ezpwd::gfpoly<8,285>>::encode(const std::pair<uint16_t *,uint16_t *> &) const'
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(636,50): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(632,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,5,1,1,ezpwd::gfpoly<8,285>>::encode(const std::pair<const uint8_t *,const uint8_t *> &,const std::pair<uint8_t *,uint8_t *> &) const'
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(632,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,1,1,1,ezpwd::gfpoly<8,285>>::encode(const std::pair<const uint8_t *,const uint8_t *> &,const std::pair<uint8_t *,uint8_t *> &) const'
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(623,63): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(622,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,5,1,1,ezpwd::gfpoly<8,285>>::encode(const std::pair<uint8_t *,uint8_t *> &) const'
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(622,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,1,1,1,ezpwd::gfpoly<8,285>>::encode(const std::pair<uint8_t *,uint8_t *> &) const'
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(886,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(811,1): message : see reference to function template instantiation 'int ezpwd::reed_solomon<uint8_t,8,5,1,1,ezpwd::gfpoly<8,285>>::decode_mask<uint32_t>(INP *,int,INP *,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const' being compiled
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(811,1): message : see reference to function template instantiation 'int ezpwd::reed_solomon<uint8_t,8,1,1,1,ezpwd::gfpoly<8,285>>::decode_mask<uint32_t>(INP *,int,INP *,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const' being compiled
           with
           [
               INP=uint32_t
           ]
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(810,6): message : see reference to function template instantiation 'int ezpwd::reed_solomon<uint8_t,8,5,1,1,ezpwd::gfpoly<8,285>>::decode_mask<uint32_t>(INP *,int,INP *,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const' being compiled
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(810,6): message : see reference to function template instantiation 'int ezpwd::reed_solomon<uint8_t,8,1,1,1,ezpwd::gfpoly<8,285>>::decode_mask<uint32_t>(INP *,int,INP *,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const' being compiled
           with
           [
               INP=uint32_t
           ]
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(806,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,5,1,1,ezpwd::gfpoly<8,285>>::decode(const std::pair<uint32_t *,uint32_t *> &,const std::pair<uint32_t *,uint32_t *> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const'
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(806,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,1,1,1,ezpwd::gfpoly<8,285>>::decode(const std::pair<uint32_t *,uint32_t *> &,const std::pair<uint32_t *,uint32_t *> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const'
 D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(862,32): warning C4244: '=': conversion from 'INP' to '_Ty', possible loss of data
           with
           [
@@ -113,17 +113,17 @@ D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(862,32):
           [
               _Ty=uint8_t
           ]
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(782,1): message : see reference to function template instantiation 'int ezpwd::reed_solomon<uint8_t,8,5,1,1,ezpwd::gfpoly<8,285>>::decode_mask<uint16_t>(INP *,int,INP *,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const' being compiled
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(782,1): message : see reference to function template instantiation 'int ezpwd::reed_solomon<uint8_t,8,1,1,1,ezpwd::gfpoly<8,285>>::decode_mask<uint16_t>(INP *,int,INP *,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const' being compiled
           with
           [
               INP=uint16_t
           ]
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(781,6): message : see reference to function template instantiation 'int ezpwd::reed_solomon<uint8_t,8,5,1,1,ezpwd::gfpoly<8,285>>::decode_mask<uint16_t>(INP *,int,INP *,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const' being compiled
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(781,6): message : see reference to function template instantiation 'int ezpwd::reed_solomon<uint8_t,8,1,1,1,ezpwd::gfpoly<8,285>>::decode_mask<uint16_t>(INP *,int,INP *,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const' being compiled
           with
           [
               INP=uint16_t
           ]
-D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(777,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,5,1,1,ezpwd::gfpoly<8,285>>::decode(const std::pair<uint16_t *,uint16_t *> &,const std::pair<uint16_t *,uint16_t *> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const'
+D:\KSA\R&E\DDDS_RandomAccessSystem\DDDS System\DNA_Editor\ezpwd\rs_base(777,1): message : while compiling class template member function 'int ezpwd::reed_solomon<uint8_t,8,1,1,1,ezpwd::gfpoly<8,285>>::decode(const std::pair<uint16_t *,uint16_t *> &,const std::pair<uint16_t *,uint16_t *> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> *) const'
   Main.cpp
 x64\Release\EncodingTable.obj : warning LNK4042: object specified more than once; extras ignored
   Generating code

@@ -8,29 +8,28 @@
 
 계속하려면 아무 키나 누르십시오 . . .
 > Select the Files
-Repetition : 4
+Repetition : 1.75
 [DNA Strand Generating]
 File 1/2
-        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\2. Little Star\MusicDNA/LittleStar_High.musicdna
+        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\Musical Score\2. Little Star\MusicDNA/LittleStar_High.musicdna
         Partition Size : 12nt (3byte)
         Partitioning . . .
         Generating DNA Strands . . .
-        DNA Number : 194
-        Repetition : 4.01379
+        DNA Number : 85
+        Repetition : 1.75862
         Generated
-        Number of DNA Strands : 194
+        Number of DNA Strands : 85
 
 File 2/2
-        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\2. Little Star\MusicDNA/LittleStar_Low.musicdna
-        Partition Size : 12nt (3byte)
+        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\Musical Score\2. Little Star\MusicDNA/LittleStar_Low.musicdna        Partition Size : 12nt (3byte)
         Partitioning . . .
         Generating DNA Strands . . .
-        DNA Number : 96
-        Repetition : 4
+        DNA Number : 42
+        Repetition : 1.75
         Generated
-        Number of DNA Strands : 96
+        Number of DNA Strands : 42
 
 [Save Data]
-File 1/2        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\2. Little Star\MusicDNA/LittleStar_High.musicdna.dna
-File 2/2        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\2. Little Star\MusicDNA/LittleStar_Low.musicdna.dna
+File 1/2        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\Musical Score\2. Little Star\MusicDNA/LittleStar_High.musicdna.dna
+File 2/2        Path : D:\KSA\R&E\DDDS_RandomAccessSystem\Lab\Lab2\Musical Score\2. Little Star\MusicDNA/LittleStar_Low.musicdna.dna
 END
